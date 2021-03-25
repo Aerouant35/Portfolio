@@ -72,20 +72,69 @@
     <!-- main-container -->
     <div class="container main-container">
         <div class="col-md-12">
-            <img src="http://placehold.it/1920x1080" alt="" class="img-responsive" />
+            <img src="../img/works/Projet6/Game.jpg" alt="" class="img-responsive center-block" />
             <div class="h-30"></div>
         </div>
 
         <div class="col-md-12">
             <h3 class="text-uppercase">RPG C++ console</h3>
-            <h5>1er projet d'une durée de 1 semaine au sein du gaming campus</h5>
+            <h5>Projet C++, partie 1</h5>
             <div class="h-30"></div>
         </div>
 
-        <div class="col-md-9">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliter enim nosmet ipsos nosse non possumus. Inscite autem medicinae et gubernationis ultimum cum ultimo sapientiae comparatur. Tecum optime, deinde etiam cum mediocri amico. Et nemo nimium beatus est; Ac ne plura complectar-sunt enim innumerabilia-, bene laudata virtus voluptatis aditus ultimum cum ultimo sapientiae Et nemo nimium beatus est </p>
+        <div class="col-md-12 text-justify">
+            <p>Ce projet est le premier en C++, le but est de réaliser un jeu en mode texte en C++.
+                Le choix du mode texte est pour simplifer la partie input/output pour plus se concentrer sur l'apprentissage de la syntaxe du langage, la structuration du code.
+                Le jeu attendu est un mini-RPG avec un héros qui se déplace dans un monde en 2D, ramasse des trésors, des armes, des équipements et combat des ennemis.
+            </p>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliter enim nosmet ipsos nosse non possumus. Inscite autem medicinae et gubernationis ultimum cum ultimo sapientiae comparatur. Tecum optime, deinde etiam cum mediocri amico. Et nemo nimium beatus est; Ac ne plura complectar-sunt enim innumerabilia </p>
+            <p>
+                L'affichage est fait pour savoir où le personnage peut aller, ce qu'il y a dans la pièce actuel et les statistiques du personnage (vie, dégats, armure, argent).
+                Comme le jeu est en console donc tous les inputs sont des touches du claviers qu'il suffit de presser. Pour connaître toutes les touches disponible, il y a un aide au début du jeu et qui peut être rappelé tout au long du jeu.
+                (Si le personnage veut se déplacer d'une salle il doit appuyer sur la touche correspondant à un point cardinal (N, S, E, W)).</br>
+                La génération de salles, de trésor, d'arme, d'équipement, et d'ennemi est "hardcoder". 
+                J'ai rajouté une condition pour l'affrontement des ennemis par exemple il faut un arc pour affronter une chauves-souris.
+                Lorsque qu'on appuie sur la touche d'attaque pour affronter un ennemi, il y a une chance sur trois que se soit le personnage qui prend des dégats et non l'ennemi.
+                Quand l'ennemi meurt, il laisse tomber de l'argent qui est ajouté à la bourse du personnage.
+            </p>
+            <div class="h-30"></div>
+        </div>
+
+        <div class="row">
+            <figure class="figure col-md-8">
+                <img src="../img/works/Projet6/BowForBat.jpg" class="figure-img img-responsive img-fluid img-rounded center-block" />
+                <figcaption class="figure-caption center">Condition pour affronter la chauves-souris</figcaption>
+            </figure>
+            <figure class="figure col-md-4">
+                <img src="../img/works/Projet6/Fight.jpg" class="figure-img img-responsive img-fluid img-rounded center-block" />
+                <figcaption class="figure-caption center">Combat et gain d'argent</figcaption>
+                <div class="h-30"></div>
+            </figure>
+        </div>
+
+        <div class="col-md-12 text-justify">
+            <p>Certaines salles contiennent des armes ou de l'armure. Une fois récupérer, les armes amélioreront l'attaque et l'armure amélioreront la l'armure de façon permanante.
+                Il est également possible de trouver des trésors qui contiennent des pièces d'or. Elles peuvent être récupérer et s'ajouteront à la bourse.</br>
+                En bonus j'ai rajouté des potions, il en existe deux types : une de soin et une de défense. La console donnera le montant de point de vie ou de défense que la potion donnera. 
+                La potion de soin va ajouter des points de vie même si le personnage est au maximum de sa vie.
+                La potion de défense va ajouter de la défense mais temporaire. La défense ajouter permettra d'encaisser les dégats que fait un ennemi mais disparaîtra suite à ça.
+            </p>
+            <div class="h-30"></div>
+        </div>
+
+        <div class="row">
+            <figure class="figure col-md-4">
+                <img src="../img/works/Projet6/Armor.jpg" class="figure-img img-responsive img-fluid img-rounded center-block" />
+                <figcaption class="figure-caption center">L'armure ajouté à la statistique d'armure</figcaption>
+            </figure>
+            <figure class="figure col-md-4">
+                <img src="../img/works/Projet6/Coin.jpg" class="figure-img img-responsive img-fluid img-rounded center-block" />
+                <figcaption class="figure-caption center">Argent ajouté à la bourse</figcaption>
+            </figure>
+            <figure class="figure col-md-4">
+                <img src="../img/works/Projet6/Potion.jpg" class="figure-img img-responsive img-fluid img-rounded center-block" />
+                <figcaption class="figure-caption center">Potion de soins</figcaption>
+            </figure>
         </div>
     </div>
     <!-- end main-container -->
