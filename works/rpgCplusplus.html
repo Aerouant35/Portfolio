@@ -1,28 +1,26 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>RPG C++ console</title>
-        <link rel="icon" href="../img/fav.png" type="image/x-icon">
-    
-        <!-- Bootstrap -->
-        <link href="../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../ionicons/css/ionicons.min.css" rel="stylesheet">
-    
-        <!-- main css -->
-        <link href="../css/style.css" rel="stylesheet">
-    
-    
-        <!-- modernizr -->
-        <script src="../js/modernizr.js"></script>
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>RPG C++ console</title>
+    <link rel="icon" href="../img/fav.png" type="image/x-icon">
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../ionicons/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- main css -->
+    <link href="../css/style.css" rel="stylesheet">
+
+    <!-- modernizr -->
+    <script src="../js/modernizr.js"></script>
+</head>
 
 <body>
-
     <!-- Preloader -->
     <div id="preloader">
         <div class="pre-container">
@@ -35,40 +33,22 @@
     <!-- end Preloader -->
 
     <div class="container-fluid">
-       <!-- box-header -->
+        <!-- box-header -->
         <header class="box-header">
             <div class="box-logo">
                 <a href="../index.html"><img src="../img/logo.png" width="80" alt="Logo"></a>
             </div>
-            <!-- box-nav -->
-            <a class="box-primary-nav-trigger" href="#0">
-                <span class="box-menu-text">Menu</span><span class="box-menu-icon"></span>
-            </a>
-            <!-- box-primary-nav-trigger -->
         </header>
         <!-- end box-header -->
-        
-        <!-- nav -->
-        <nav>
-            <ul class="box-primary-nav">
-                <li class="box-label">About me</li>
-
-                <li><a href="../index.html">Intro</a></li>
-                <li><a href="../about.html">About me</a></li>
-                <li><a href="../services.html">services</a></li>
-                <li><a href="../portfolio.html">portfolio</a> <i class="ion-ios-circle-filled color"></i></li>
-            </ul>
-        </nav>
-        <!-- end nav -->
     </div>
-    
+
     <!-- top-bar -->
     <div class="top-bar">
         <h1>RPG C++ console</h1>
-        <p><a href="../index.html">Home</a> / <a href="../portfolio.html">portfolio</a> / RPG C++ console</p>
+        <p><a href="../index.html">Home</a> / RPG C++ console</p>
     </div>
     <!-- end top-bar -->
-    
+
     <!-- main-container -->
     <div class="container main-container">
         <div class="col-md-12">
@@ -83,18 +63,27 @@
         </div>
 
         <div class="col-md-12 text-justify">
-            <p>Ce projet est le premier en C++, le but est de réaliser un jeu en mode texte en C++.
-                Le choix du mode texte est pour simplifer la partie input/output pour plus se concentrer sur l'apprentissage de la syntaxe du langage, la structuration du code.
-                Le jeu attendu est un mini-RPG avec un héros qui se déplace dans un monde en 2D, ramasse des trésors, des armes, des équipements et combat des ennemis.
+            <p>
+                Ce projet est le premier en C++, le but est de réaliser un jeu en mode texte en C++.
+                Le choix du mode texte est pour simplifer la partie input/output pour plus se concentrer sur
+                l'apprentissage de la syntaxe du langage, la structuration du code.
+                Le jeu attendu est un mini-RPG avec un héros qui se déplace dans un monde en 2D, ramasse des trésors,
+                des armes, des équipements et combat des ennemis.
             </p>
 
             <p>
-                L'affichage est fait pour savoir où le personnage peut aller, ce qu'il y a dans la pièce actuel et les statistiques du personnage (vie, dégats, armure, argent).
-                Comme le jeu est en console donc tous les inputs sont des touches du claviers qu'il suffit de presser. Pour connaître toutes les touches disponible, il y a un aide au début du jeu et qui peut être rappelé tout au long du jeu.
-                (Si le personnage veut se déplacer d'une salle il doit appuyer sur la touche correspondant à un point cardinal (N, S, E, W)).</br>
-                La génération de salles, de trésor, d'arme, d'équipement, et d'ennemi est "hardcoder". 
-                J'ai rajouté une condition pour l'affrontement des ennemis par exemple il faut un arc pour affronter une chauves-souris.
-                Lorsque qu'on appuie sur la touche d'attaque pour affronter un ennemi, il y a une chance sur trois que se soit le personnage qui prend des dégats et non l'ennemi.
+                L'affichage est fait pour savoir où le personnage peut aller, ce qu'il y a dans la pièce actuel et les
+                statistiques du personnage (vie, dégats, armure, argent).
+                Comme le jeu est en console donc tous les inputs sont des touches du claviers qu'il suffit de presser.
+                Pour connaître toutes les touches disponible, il y a un aide au début du jeu et qui peut être rappelé
+                tout au long du jeu.
+                (Si le personnage veut se déplacer d'une salle il doit appuyer sur la touche correspondant à un point
+                cardinal (N, S, E, W)).</br>
+                La génération de salles, de trésor, d'arme, d'équipement, et d'ennemi est "hardcoder".
+                J'ai rajouté une condition pour l'affrontement des ennemis par exemple il faut un arc pour affronter une
+                chauves-souris.
+                Lorsque qu'on appuie sur la touche d'attaque pour affronter un ennemi, il y a une chance sur trois que
+                se soit le personnage qui prend des dégats et non l'ennemi.
                 Quand l'ennemi meurt, il laisse tomber de l'argent qui est ajouté à la bourse du personnage.
             </p>
             <div class="h-30"></div>
@@ -102,58 +91,57 @@
 
         <div class="row">
             <figure class="figure col-md-8">
-                <img src="../img/works/Projet6/BowForBat.jpg" class="figure-img img-responsive img-fluid img-rounded center-block" />
+                <img src="../img/works/Projet6/BowForBat.jpg"
+                    class="figure-img img-responsive img-fluid img-rounded center-block" />
                 <figcaption class="figure-caption center">Condition pour affronter la chauves-souris</figcaption>
             </figure>
             <figure class="figure col-md-4">
-                <img src="../img/works/Projet6/Fight.jpg" class="figure-img img-responsive img-fluid img-rounded center-block" />
+                <img src="../img/works/Projet6/Fight.jpg"
+                    class="figure-img img-responsive img-fluid img-rounded center-block" />
                 <figcaption class="figure-caption center">Combat et gain d'argent</figcaption>
                 <div class="h-30"></div>
             </figure>
         </div>
 
         <div class="col-md-12 text-justify">
-            <p>Certaines salles contiennent des armes ou de l'armure. Une fois récupérer, les armes amélioreront l'attaque et l'armure amélioreront la l'armure de façon permanante.
+            <p>
+                Certaines salles contiennent des armes ou de l'armure. Une fois récupérer, les armes amélioreront
+                l'attaque et l'armure amélioreront la l'armure de façon permanante.
                 J'ai mis en place de l'héritage sur les armes et les armures dont la classe mère est "Equipment".
-                Il est également possible de trouver des trésors qui contiennent des pièces d'or. Elles peuvent être récupérer et s'ajouteront à la bourse.</br>
-                En bonus j'ai rajouté des potions, il en existe deux types : une de soin et une de défense. La console donnera le montant de point de vie ou de défense que la potion donnera. 
+                Il est également possible de trouver des trésors qui contiennent des pièces d'or. Elles peuvent être
+                récupérer et s'ajouteront à la bourse.</br>
+                En bonus j'ai rajouté des potions, il en existe deux types : une de soin et une de défense. La console
+                donnera le montant de point de vie ou de défense que la potion donnera.
                 La potion de soin va ajouter des points de vie même si le personnage est au maximum de sa vie.
-                La potion de défense va ajouter de la défense mais temporaire. La défense ajouter permettra d'encaisser les dégats que fait un ennemi mais disparaîtra suite à ça.
+                La potion de défense va ajouter de la défense mais temporaire. La défense ajouter permettra d'encaisser
+                les dégats que fait un ennemi mais disparaîtra suite à ça.
             </p>
             <div class="h-30"></div>
         </div>
 
         <div class="row">
             <figure class="figure col-md-4">
-                <img src="../img/works/Projet6/Armor.jpg" class="figure-img img-responsive img-fluid img-rounded center-block" />
+                <img src="../img/works/Projet6/Armor.jpg"
+                    class="figure-img img-responsive img-fluid img-rounded center-block" />
                 <figcaption class="figure-caption center">L'armure ajouté à la statistique d'armure</figcaption>
             </figure>
             <figure class="figure col-md-4">
-                <img src="../img/works/Projet6/Coin.jpg" class="figure-img img-responsive img-fluid img-rounded center-block" />
+                <img src="../img/works/Projet6/Coin.jpg"
+                    class="figure-img img-responsive img-fluid img-rounded center-block" />
                 <figcaption class="figure-caption center">Argent ajouté à la bourse</figcaption>
             </figure>
             <figure class="figure col-md-4">
-                <img src="../img/works/Projet6/Potion.jpg" class="figure-img img-responsive img-fluid img-rounded center-block" />
+                <img src="../img/works/Projet6/Potion.jpg"
+                    class="figure-img img-responsive img-fluid img-rounded center-block" />
                 <figcaption class="figure-caption center">Potion de soins</figcaption>
             </figure>
         </div>
     </div>
     <!-- end main-container -->
 
-
-    <!-- footer -->
-    <footer>
-        <div class="container-fluid">
-            <p class="copyright">© Box Portfolio 2016</p>
-        </div>
-    </footer>
-    <!-- end footer -->
-    
     <!-- back to top -->
     <a href="#0" class="cd-top"><i class="ion-android-arrow-up"></i></a>
     <!-- end back to top -->
-
-
 
     <!-- jQuery -->
     <script src="../js/jquery-2.1.1.js"></script>
@@ -162,7 +150,6 @@
     <script src="../js/menu.js"></script>
     <script src="../js/animated-headline.js"></script>
     <script src="../js/isotope.pkgd.min.js"></script>
-
 
     <!--  custom script -->
     <script src="../js/custom.js"></script>

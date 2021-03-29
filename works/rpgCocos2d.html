@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>RPG Coco2D-x</title>
-        <link rel="icon" href="../img/fav.png" type="image/x-icon">
-    
-        <!-- Bootstrap -->
-        <link href="../css/bootstrap.min.css" rel="stylesheet">
-        <link href="../ionicons/css/ionicons.min.css" rel="stylesheet">
-    
-        <!-- main css -->
-        <link href="../css/style.css" rel="stylesheet">
-    
-    
-        <!-- modernizr -->
-        <script src="../js/modernizr.js"></script>
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>RPG Coco2D-x</title>
+    <link rel="icon" href="../img/fav.png" type="image/x-icon">
+
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../ionicons/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- main css -->
+    <link href="../css/style.css" rel="stylesheet">
+
+
+    <!-- modernizr -->
+    <script src="../js/modernizr.js"></script>
+</head>
 
 <body>
 
@@ -35,40 +35,22 @@
     <!-- end Preloader -->
 
     <div class="container-fluid">
-       <!-- box-header -->
+        <!-- box-header -->
         <header class="box-header">
             <div class="box-logo">
                 <a href="../index.html"><img src="../img/logo.png" width="80" alt="Logo"></a>
             </div>
-            <!-- box-nav -->
-            <a class="box-primary-nav-trigger" href="#0">
-                <span class="box-menu-text">Menu</span><span class="box-menu-icon"></span>
-            </a>
-            <!-- box-primary-nav-trigger -->
         </header>
         <!-- end box-header -->
-        
-        <!-- nav -->
-        <nav>
-            <ul class="box-primary-nav">
-                <li class="box-label">About me</li>
-
-                <li><a href="../index.html">Intro</a></li>
-                <li><a href="../about.html">About me</a></li>
-                <li><a href="../services.html">services</a></li>
-                <li><a href="../portfolio.html">portfolio</a> <i class="ion-ios-circle-filled color"></i></li>
-            </ul>
-        </nav>
-        <!-- end nav -->
     </div>
-    
+
     <!-- top-bar -->
     <div class="top-bar">
         <h1>RPG Coco2D-x</h1>
-        <p><a href="../index.html">Home</a> / <a href="../portfolio.html">portfolio</a> / RPG Coco2D-x</p>
-        </div>
+        <p><a href="../index.html">Home</a> / RPG Coco2D-x</p>
+    </div>
     <!-- end top-bar -->
-    
+
     <!-- main-container -->
     <div class="container main-container">
         <div class="col-md-12">
@@ -83,19 +65,32 @@
         </div>
 
         <div class="col-md-12 text-justify">
-            <p>Ce projet une suite du projet <a href="rpgCplusplus.html">RPG C++</a>, avec comme objectif d'apprendre à utiliser un moteur C++ et d'approfondir les notions C++.
-                Le moteur utilisé est Coco2d-x, un moteur est relativement bas-niveau, orienté "jeux 2D pour mobiles".</br>
-                Le code du gameplay est repris du projet précédent pour ce concentrer sur l'utilisation du moteur et l'implémentation de graphismes (sprite), du son et des interactions utilisateur.
-                Ce projet étant un travail en groupe on devait garder qu'un seul code du projet précédent. Après concertation, ce fut mon code qui a été utilisé dans ce projet.
+            <p>
+                Ce projet une suite du projet <a href="rpgCplusplus.html">RPG C++</a>, avec comme objectif d'apprendre à
+                utiliser un moteur C++ et d'approfondir les notions C++.
+                Le moteur utilisé est Coco2d-x, un moteur est relativement bas-niveau, orienté "jeux 2D pour
+                mobiles".</br>
+                Le code du gameplay est repris du projet précédent pour ce concentrer sur l'utilisation du moteur et
+                l'implémentation de graphismes (sprite), du son et des interactions utilisateur.
+                Ce projet étant un travail en groupe on devait garder qu'un seul code du projet précédent. Après
+                concertation, ce fut mon code qui a été utilisé dans ce projet.
             </p>
 
-            <p>Sur le sujet que nous avons choisis on devait afficher une vue d'ensemble des salles (carte), afficher la présence du personnage et des trésors dans la salle, 
-                une interface qui affiche les coordonnées de la salle actuelle. Il fallait ajouté des interactions pour changer de salle ou ramasser des trésors et mettre des effets sonores sur celle-ci.</br>
-                Je me suis occupé de l'ajout des sprites la salle, du personnage et de la carte. Sur la carte, le personnage se déplace en temps réel lors d'un changement de salle.
-                Comme on a repris mon code donc chaque porte contient le pointeur d'une salle, j'ai fait en sorte d'afficher une porte s'il existe un salle à chaque coordonnées.
-                Le moteur permet de donner une boite de collision aux sprites, je me suis servis de ça pour savoir si le joueur a cliqué sur un sprite d'une porte et d'afficher la salle suivante.</br>
-                J'ai rajouté les sprites des trésors, j'ai utilisé et adaptés les fonctions que j'avais faites pour pouvoir avoir un retour visuel lors de la récupérations d'un trésor.
-                J'ai ajouté tout les effets sonores (porte, trésor, dégats joueur/ennemi) dont en bonus une musique d'ambiance.
+            <p>
+                Sur le sujet que nous avons choisis on devait afficher une vue d'ensemble des salles (carte), afficher
+                la présence du personnage et des trésors dans la salle,
+                une interface qui affiche les coordonnées de la salle actuelle. Il fallait ajouté des interactions pour
+                changer de salle ou ramasser des trésors et mettre des effets sonores sur celle-ci.</br>
+                Je me suis occupé de l'ajout des sprites la salle, du personnage et de la carte. Sur la carte, le
+                personnage se déplace en temps réel lors d'un changement de salle.
+                Comme on a repris mon code donc chaque porte contient le pointeur d'une salle, j'ai fait en sorte
+                d'afficher une porte s'il existe un salle à chaque coordonnées.
+                Le moteur permet de donner une boite de collision aux sprites, je me suis servis de ça pour savoir si le
+                joueur a cliqué sur un sprite d'une porte et d'afficher la salle suivante.</br>
+                J'ai rajouté les sprites des trésors, j'ai utilisé et adaptés les fonctions que j'avais faites pour
+                pouvoir avoir un retour visuel lors de la récupérations d'un trésor.
+                J'ai ajouté tout les effets sonores (porte, trésor, dégats joueur/ennemi) dont en bonus une musique
+                d'ambiance.
                 En bonus, nous avons ajouté la présence d'ennemi et un combat simple avec eux.
             </p>
             <div class="h-30"></div>
@@ -103,26 +98,19 @@
 
         <div class="row">
             <figure class="figure col-md-6">
-                <img src="../img/works/Projet7/Treasure.jpg" class="figure-img img-responsive img-fluid img-rounded center-block" />
+                <img src="../img/works/Projet7/Treasure.jpg"
+                    class="figure-img img-responsive img-fluid img-rounded center-block" />
                 <figcaption class="figure-caption center">Récupration d'un trésor</figcaption>
             </figure>
             <figure class="figure col-md-6">
-                <img src="../img/works/Projet7/Fight.jpg" class="figure-img img-responsive img-fluid img-rounded center-block" />
+                <img src="../img/works/Projet7/Fight.jpg"
+                    class="figure-img img-responsive img-fluid img-rounded center-block" />
                 <figcaption class="figure-caption center">Combat avec un ennmi</figcaption>
             </figure>
         </div>
     </div>
     <!-- end main-container -->
 
-
-    <!-- footer -->
-    <footer>
-        <div class="container-fluid">
-            <p class="copyright">© Box Portfolio 2016</p>
-        </div>
-    </footer>
-    <!-- end footer -->
-    
     <!-- back to top -->
     <a href="#0" class="cd-top"><i class="ion-android-arrow-up"></i></a>
     <!-- end back to top -->
@@ -134,7 +122,6 @@
     <script src="../js/menu.js"></script>
     <script src="../js/animated-headline.js"></script>
     <script src="../js/isotope.pkgd.min.js"></script>
-
 
     <!--  custom script -->
     <script src="../js/custom.js"></script>
