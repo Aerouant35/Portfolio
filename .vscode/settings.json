@@ -1,0 +1,17 @@
+{
+    "cSpell.enableFiletypes": [
+        "!asciidoc",
+        "!c",
+        "!cpp",
+        "!csharp",
+        "!css",
+        "!diff",
+        "!go",
+        "!graphql",
+        "!yaml",
+        "!yml",
+        "html",
+        "xsl"
+    ],
+    "cSpell.enabled": true
+}
