@@ -32,7 +32,7 @@ $(window).load(function () {
     // back to top
     var offset = 300,
         offset_opacity = 1200,
-        scroll_top_duration = 700,
+        scroll_top_duration = 0 /*700*/,
         $back_to_top = $('.cd-top');
 
     //hide or show the "back to top" link
@@ -47,7 +47,7 @@ $(window).load(function () {
     $back_to_top.on('click', function (event) {
         event.preventDefault();
         $('body,html').animate({
-            scrollTop: 0,
+            scrollTop : 0,
         }, scroll_top_duration);
     });
 
