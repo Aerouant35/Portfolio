@@ -1,0 +1,5 @@
+# Visual Studio Code user specific files
+.vscode/
+
+# Rider user specific files
+.idea/
