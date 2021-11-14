@@ -291,7 +291,7 @@ h5 {
 
 .box-primary-nav-trigger .box-menu-icon.is-clicked::before,
 .box-primary-nav-trigger .box-menu-icon.is-clicked::after {
-    background-color: 393939;
+    background-color: #393939;
 }
 
 .box-primary-nav-trigger .box-menu-icon.is-clicked::before {
@@ -885,9 +885,6 @@ footer img {
 }
 
 
-/* About page
-==================================================*/
-
 .top-bar {
     color: #333;
     padding: 150px 0 150px;
@@ -898,6 +895,9 @@ footer img {
     background-position: center center;
     text-align: center;
 }
+
+/* About page
+==================================================*/
 
 .top-bar h1 {
     font-size: 60px;
@@ -1175,5 +1175,33 @@ textarea:focus {
     .top-bar h1 {
         font-size: 30px;
         line-height: 30px;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body, #preloader {
+        background-color: #181818;
+        color: #fefefe;
+    }
+    .figure-caption, h3, .portfolio .categories-grid .categories ul li a, .top-bar h1 {
+        color: #aaa;
+    }
+    h5, a {
+        color: #8ab4f8;
+    }
+    .portfolio .categories-grid .categories ul li a.active, .portfolio_item .portfolio_item_hover .item_info em, .double-bounce1,
+    .double-bounce2
+    {
+        background-color: #2c7bbf;
+    }
+    .cd-top, .no-touch .cd-top:hover, .no-touch .cd-top:focus{
+        background: rgba(44, 123, 191, 0.8);
+    }
+    .top-bar {
+        background: -webkit-linear-gradient( rgb(0, 0, 0, .85), rgba(0, 0, 0, .85)), url(../img/01.jpg);
+        background: linear-gradient( rgba(0, 0, 0, .85), rgba(0, 0, 0, .85)), url(../img/01.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center center;
     }
 }
