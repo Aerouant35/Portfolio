@@ -1,147 +1,130 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
     <title>RPG C++ console</title>
 
-    <!-- Bootstrap -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../ionicons/css/ionicons.min.css" rel="stylesheet">
-
-    <!-- main css -->
     <link href="../css/style.css" rel="stylesheet">
 
-    <!-- modernizr -->
     <script src="../js/modernizr.js"></script>
 </head>
 
 <body>
-    <!-- Preloader -->
-    <div id="preloader">
-        <div class="pre-container">
-            <div class="spinner">
-                <div class="double-bounce1"></div>
-                <div class="double-bounce2"></div>
-            </div>
+<div id="preloader">
+    <div class="pre-container">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
         </div>
     </div>
-    <!-- end Preloader -->
+</div>
 
-    <!-- top-bar -->
-    <div class="top-bar">
-        <h1>RPG C++ console</h1>
-        <p><a href="../index.html" class="text-decoration-none">Home</a> / RPG C++ console</p>
+<div class="top-bar">
+    <h1>RPG C++ console</h1>
+    <p><a href="../index.html" class="text-decoration-none">Home</a> / RPG C++ console</p>
+</div>
+
+<div class="container main-container">
+    <div class="col-md-12">
+        <img src="../img/works/Project6/Game.jpg" alt="" class="img-fluid mx-auto d-block"/>
+        <div class="h-30"></div>
     </div>
-    <!-- end top-bar -->
 
-    <!-- main-container -->
-    <div class="container main-container">
-        <div class="col-md-12">
-            <img src="../img/works/Project6/Game.jpg" alt="" class="img-fluid mx-auto d-block" />
-            <div class="h-30"></div>
-        </div>
-
-        <div class="col-md-12">
-            <h3>RPG C++ console</h3>
-            <h5>Projet C++, partie 1</h5>
-            <div class="h-30"></div>
-        </div>
-
-        <div class="col-md-12">
-            <p>
-                Ce projet est le premier en C++, le but est de réaliser un jeu en mode texte en C++.
-                Le choix du mode texte est pour simplifier la partie input/output pour plus se concentrer sur
-                l'apprentissage de la syntaxe du langage, la structuration du code.
-                Le jeu attendu est un mini-RPG avec un héros qui se déplace dans un monde en 2D, ramasse des trésors,
-                des armes, des équipements et combat des ennemis.
-            </p>
-
-            <p>
-                L'affichage est fait pour savoir où le personnage peut aller, ce qu'il y a dans la pièce actuelle et les
-                statistiques du personnage (vie, dégâts, armure, argent).
-                Comme le jeu est en console donc tous les inputs sont des touches du clavier qu'il suffit de presser.
-                Pour connaître toutes les touches disponibles, il y a une aide au début du jeu et qui peut être appelée
-                tout au long du jeu.
-                (Si le personnage veut se déplacer d'une salle, il doit appuyer sur la touche correspondant à un point
-                cardinal (N, S, E, W)).<br>
-                La génération de salles, de trésor, d'arme, d'équipement, et d'ennemi est hardcodée.
-                J'ai rajouté une condition pour l'affrontement des ennemis par exemple il faut un arc pour affronter une
-                chauve-souris.
-                Lorsque qu'on appuie sur la touche d'attaque pour affronter un ennemi, il y a une chance sur trois que
-                se soit le personnage qui prend des dégâts et non l'ennemi.
-                Quand l'ennemi meurt, il laisse tomber de l'argent qui est ajouté à la bourse du personnage.
-            </p>
-            <div class="h-30"></div>
-        </div>
-
-        <div class="row">
-            <figure class="figure col-md">
-                <img src="../img/works/Project6/BowForBat.jpg"
-                    class="figure-img img-fluid rounded mx-auto d-block" />
-                <figcaption class="figure-caption center">Condition pour affronter la chauve-souris</figcaption>
-            </figure>
-            <figure class="figure col-md">
-                <img src="../img/works/Project6/Fight.jpg"
-                    class="figure-img img-fluid rounded mx-auto d-block" />
-                <figcaption class="figure-caption center">Combat et gain d'argent</figcaption>
-                <div class="h-30"></div>
-            </figure>
-        </div>
-
-        <div class="col-md-12">
-            <p>
-                Certaines salles contiennent des armes ou de l'armure. Une fois récupérée, les armes amélioreront
-                l'attaque et l'armure améliorera la défense de façon permanente.
-                J'ai mis en place de l'héritage sur les armes et les armures dont la classe mère est "Equipment".
-                Il est également possible de trouver des trésors qui contiennent des pièces d'or. Elles peuvent être
-                récupérées et s'ajouteront à la bourse.<br>
-                En bonus, j'ai rajouté des potions, il en existe deux types : une de soin et une de défense. La console
-                donnera le montant de point de vie ou de défense que la potion donnera.
-                La potion de soin va ajouter des points de vie même si le personnage est au maximum de sa vie.
-                La potion de défense va ajouter de la défense, mais elle est temporaire. La défense reçue permettra d'encaisser
-                les dégâts que fait un ennemi mais disparaîtra suite à ça.
-            </p>
-            <div class="h-30"></div>
-        </div>
-
-        <div class="row">
-            <figure class="figure col-md">
-                <img src="../img/works/Project6/Armor.jpg"
-                    class="figure-img img-fluid rounded mx-auto d-block" />
-                <figcaption class="figure-caption center">L'armure ajouté à la statistique d'armure</figcaption>
-            </figure>
-            <figure class="figure col-md">
-                <img src="../img/works/Project6/Coin.jpg"
-                    class="figure-img img-fluid rounded mx-auto d-block" />
-                <figcaption class="figure-caption center">Argent ajouté à la bourse</figcaption>
-            </figure>
-            <figure class="figure col-md">
-                <img src="../img/works/Project6/Potion.jpg"
-                    class="figure-img img-fluid rounded mx-auto d-block" />
-                <figcaption class="figure-caption center">Potion de soins</figcaption>
-            </figure>
-        </div>
+    <div class="col-md-12">
+        <h3>RPG C++ console</h3>
+        <h5>Projet C++, partie 1</h5>
+        <div class="h-30"></div>
     </div>
-    <!-- end main-container -->
 
-    <!-- back to top -->
-    <a href="" class="cd-top"><i class="ion-android-arrow-up"></i></a>
-    <!-- end back to top -->
+    <div class="col-md-12">
+        <p>
+            Ce projet est le premier en C++, le but est de réaliser un jeu en mode texte en C++.
+            Le choix du mode texte est pour simplifier la partie input/output pour plus se concentrer sur
+            l'apprentissage de la syntaxe du langage, la structuration du code.
+            Le jeu attendu est un mini-RPG avec un héros qui se déplace dans un monde en 2D, ramasse des trésors,
+            des armes, des équipements et combat des ennemis.
+        </p>
 
-    <!-- jQuery -->
-    <script src="../js/jquery-2.1.1.js"></script>
-    <!--  plugins -->
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/menu.js"></script>
-    <script src="../js/animated-headline.js"></script>
-    <script src="../js/isotope.pkgd.min.js"></script>
+        <p>
+            L'affichage est fait pour savoir où le personnage peut aller, ce qu'il y a dans la pièce actuelle et les
+            statistiques du personnage (vie, dégâts, armure, argent).
+            Comme le jeu est en console donc tous les inputs sont des touches du clavier qu'il suffit de presser.
+            Pour connaître toutes les touches disponibles, il y a une aide au début du jeu et qui peut être appelée
+            tout au long du jeu.
+            (Si le personnage veut se déplacer d'une salle, il doit appuyer sur la touche correspondant à un point
+            cardinal (N, S, E, W)).<br>
+            La génération de salles, de trésor, d'arme, d'équipement, et d'ennemi est hardcodée.
+            J'ai rajouté une condition pour l'affrontement des ennemis par exemple, il faut un arc pour affronter une
+            chauve-souris.
+            Lorsque qu'on appuie sur la touche d'attaque pour affronter un ennemi, il y a une chance sur trois que
+            ce soit le personnage qui prend des dégâts et non l'ennemi.
+            Quand l'ennemi meurt, il laisse tomber de l'argent qui est ajouté à la bourse du personnage.
+        </p>
+        <div class="h-30"></div>
+    </div>
 
-    <!--  custom script -->
-    <script src="../js/custom.js"></script>
+    <div class="row">
+        <figure class="figure col-md">
+            <img src="../img/works/Project6/BowForBat.jpg"
+                 class="figure-img img-fluid rounded mx-auto d-block"/>
+            <figcaption class="figure-caption center">Condition pour affronter la chauve-souris</figcaption>
+        </figure>
+        <figure class="figure col-md">
+            <img src="../img/works/Project6/Fight.jpg"
+                 class="figure-img img-fluid rounded mx-auto d-block"/>
+            <figcaption class="figure-caption center">Combat et gain d'argent</figcaption>
+            <div class="h-30"></div>
+        </figure>
+    </div>
+
+    <div class="col-md-12">
+        <p>
+            Certaines salles contiennent des armes ou de l'armure. Une fois récupérée, les armes amélioreront
+            l'attaque et l'armure améliorera la défense de façon permanente.
+            J'ai mis en place de l'héritage sur les armes et les armures dont la classe mère est "Equipment".
+            Il est également possible de trouver des trésors qui contiennent des pièces d'or. Elles peuvent être
+            récupérées et s'ajouteront à la bourse.<br>
+            En bonus, j'ai rajouté des potions, il en existe deux types : une de soin et une de défense. La console
+            donnera le montant de point de vie ou de défense que la potion donnera.
+            La potion de soin va ajouter des points de vie même si le personnage est au maximum de sa vie.
+            La potion de défense va ajouter de la défense, mais elle est temporaire. La défense reçue permettra
+            d'encaisser
+            les dégâts que fait un ennemi, mais disparaîtra suite à ça.
+        </p>
+        <div class="h-30"></div>
+    </div>
+
+    <div class="row">
+        <figure class="figure col-md">
+            <img src="../img/works/Project6/Armor.jpg"
+                 class="figure-img img-fluid rounded mx-auto d-block"/>
+            <figcaption class="figure-caption center">L'armure ajouté à la statistique d'armure</figcaption>
+        </figure>
+        <figure class="figure col-md">
+            <img src="../img/works/Project6/Coin.jpg"
+                 class="figure-img img-fluid rounded mx-auto d-block"/>
+            <figcaption class="figure-caption center">Argent ajouté à la bourse</figcaption>
+        </figure>
+        <figure class="figure col-md">
+            <img src="../img/works/Project6/Potion.jpg"
+                 class="figure-img img-fluid rounded mx-auto d-block"/>
+            <figcaption class="figure-caption center">Potion de soins</figcaption>
+        </figure>
+    </div>
+</div>
+
+<a href="" class="cd-top"><i class="ion-android-arrow-up"></i></a>
+
+<script src="../js/jquery-2.1.1.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/menu.js"></script>
+<script src="../js/animated-headline.js"></script>
+<script src="../js/isotope.pkgd.min.js"></script>
+<script src="../js/custom.js"></script>
 </body>
-
 </html>

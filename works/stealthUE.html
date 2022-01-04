@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Stealth project</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+
+    <script src="../js/modernizr.js"></script>
+</head>
+
+<body>
+<div id="preloader">
+    <div class="pre-container">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+</div>
+
+<div class="top-bar">
+    <h1>Stealth project</h1>
+    <p><a href="../index.html" class="text-decoration-none">Home</a> / Stealth project</p>
+</div>
+
+<div class="container main-container">
+    <div class="col-md-12">
+        <img src="../img/works/Project11/UE.jpg" alt="" class="img-fluid"/>
+        <div class="h-30"></div>
+    </div>
+
+    <div class="col-md-12">
+        <h3>Stealth project</h3>
+        <h5>Jeu d'infiltration développer en équipe de trois</h5>
+        <div class="h-30"></div>
+    </div>
+
+    <div class="col-md-12">
+        <p>
+            Ce projet a pour but d'utiliser le moteur Unreal Engine 4 avec le C++ mais aussi avec les fonctionnalités
+            proposées par le moteur.
+            Le but est de créer un niveau de jeu type infiltration développer en équipe de trois.
+            Le jeu doit comporter des IA qui poursuive le joueur s'il est repéré ou sinon il doit déposer de la
+            nourriture à différents endroits dans le niveau.
+            Une UI pour connaitre la progression du joueur.
+            Et un personnage jouable qui peut prendre de la nourriture et l'emmener à sa cachette.<br>
+            La boucle de gameplay est le joueur qui commence dans sa cachette,
+            il doit ramener un par un de la nourriture apporté dans la salle par les ennemis, qu’il doit éviter.
+            Si le joueur entre en contact avec un ennemi, il perd. Si le joueur ramène 5 aliments dans sa cachette, il
+            gagne.
+        </p>
+
+        <p>
+            Sur ce projet, je me suis occupé de tout ce qui est UI. J'ai commencé par l'interface du joueur qui est
+            une progress bar avec une image de la nourriture qu'il doit récupérer pour montrer la progression du joueur.
+            Ensuite j'ai fait les écrans de victoire et de défaite. Les boutons sont développés en C++.
+        </p>
+        <div class="h-30"></div>
+    </div>
+
+    <div class="row">
+        <figure class="figure col-md-6 mx-auto d-block">
+            <img src="../img/works/Project11/InGame.jpg"
+                 class="figure-img img-fluid rounded mx-auto d-block"/>
+            <figcaption class="figure-caption center">UI du joueur</figcaption>
+            <div class="h-30"></div>
+        </figure>
+    </div>
+    <div class="row">
+        <figure class="figure col-md">
+            <img src="../img/works/Project11/Victory.jpg"
+                 class="figure-img img-fluid rounded mx-auto d-block"/>
+            <figcaption class="figure-caption center">Écran de victoire</figcaption>
+        </figure>
+        <figure class="figure col-md">
+            <img src="../img/works/Project11/Lose.jpg"
+                 class="figure-img img-fluid rounded mx-auto d-block"/>
+            <figcaption class="figure-caption center">Écran de défaite</figcaption>
+            <div class="h-30"></div>
+        </figure>
+    </div>
+
+    <div class="col-md-12">
+        <p>
+            Suite à ça, j'ai fait le menu principal, qui est une nouvelle scène en temps réel, ainsi que le menu pause.
+            En faisant le menu principal, j'en ai profité pour faire le level design du niveau.
+            J'ai ajouté un système qui permet au joueur de pouvoir changer le bindings de ses commandes à tous moments.<br>
+            Ce projet m'a permis de beaucoup apprendre sur l'UI et au code lier au widget.
+            Apprendre comment changer le bindings des commandes en temps réel fut très instructif.
+        </p>
+        <div class="h-30"></div>
+    </div>
+
+    <div class="row">
+        <figure class="figure col-md">
+            <img src="../img/works/Project11/MainMenu.jpg"
+                 class="figure-img img-fluid rounded mx-auto d-block"/>
+            <figcaption class="figure-caption center">Menu principal</figcaption>
+            <div class="h-30"></div>
+        </figure>
+        <figure class="figure col-md">
+            <img src="../img/works/Project11/Pause.jpg"
+                 class="figure-img img-fluid rounded mx-auto d-block"/>
+            <figcaption class="figure-caption center">Menu de pause</figcaption>
+        </figure>
+    </div>
+    <div class="row">
+        <figure class="figure col-md-6 mx-auto d-block">
+            <img src="../img/works/Project11/Settings.jpg"
+                 class="figure-img img-fluid rounded mx-auto d-block"/>
+            <figcaption class="figure-caption center">L'écran du keybinding</figcaption>
+            <div class="h-30"></div>
+        </figure>
+    </div>
+</div>
+
+<a href="" class="cd-top"><i class="ion-android-arrow-up"></i></a>
+
+<script src="../js/jquery-2.1.1.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/menu.js"></script>
+<script src="../js/animated-headline.js"></script>
+<script src="../js/isotope.pkgd.min.js"></script>
+<script src="../js/custom.js"></script>
+</body>
+</html>
