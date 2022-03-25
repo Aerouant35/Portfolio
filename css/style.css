@@ -1107,10 +1107,10 @@ textarea:focus {
 }
 
 .github_logo {
-    content: url("/img/GitHub/Github_b.svg");
+    content: url("../img/GitHub/Github_b.svg");
 }
 .itchio_logo {
-    content: url("/img/Itch.io/itchio-logo-textless-black.svg");
+    content: url("../img/Itch.io/itchio-logo-textless-black.svg");
 }
 
 /* Responsive media queries
@@ -1211,9 +1211,9 @@ textarea:focus {
         background-position: center center;
     }
     .github_logo {
-        content: url("/img/GitHub/Github_w.svg");
+        content: url("../img/GitHub/Github_w.svg");
     }
     .itchio_logo {
-        content: url("/img/Itch.io/itchio-logo-textless-white.svg");
+        content: url("../img/Itch.io/itchio-logo-textless-white.svg");
     }
 }
