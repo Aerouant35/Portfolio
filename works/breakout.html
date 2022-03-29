@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>RPG C++ console</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+
+    <script src="../js/modernizr.js"></script>
+</head>
+
+<body>
+<div id="preloader">
+    <div class="pre-container">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+</div>
+
+<div class="top-bar">
+    <h1>Breakout</h1>
+    <p><a href="../index.html" class="text-decoration-none">Home</a> / Breakout</p>
+</div>
+
+<div class="container main-container">
+    <div class="col-md-12">
+        <img src="../img/works/Project10/Game.png" alt="" class="img-fluid mx-auto d-block"/>
+        <div class="h-30"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-8">
+            <h3>Breakout</h3>
+            <h5>Projet C++ avec SFML</h5>
+        </div>
+        <div class="col-md d-flex justify-content-md-end">
+            <a href="https://github.com/Aerouant35/SFML-Breakout" target="_blank" class="col-md-3 col-2 me-md-3"><img class="img-fluid github_logo"></a>
+            <!--<a href="" target="_blank" class="col-md-3 col-2"><img class="img-fluid itchio_logo"></a>-->
+        </div>
+        <div class="h-30"></div>
+    </div>
+
+
+    <div class="col-md-12">
+        <p>
+            Ce projet a pour but de nous apprendre l'utilisation de l'API SFML. Elle permet l'affichage d'images,
+            de formes géométriques et la gestion des évènements utilisateurs.
+            Avec l'API SFML, en groupe de deux, nous devions créer un jeu de casse brique, mais à la place
+            de la barre, on utilise un canon qui permet de tirer une balle dans toutes les directions.
+        </p>
+
+        <p>
+            Lorsque le joueur fait un clic sur le bouton gauche de la souris, on récupère la position de la souris sur
+            la fenêtre. Ensuite on fait la différence en la position de la balle (qui est dans le canon)
+            et la position de la souris, on normalise le vecteur qui en sort et on le donne à la balle avec une vélocité,
+            la balle part dans la direction souhaitée.<br>
+            Quand la balle touche une brique avec un chiffre dessus, la balle rebondie et le chiffre sur la brique décrémente.
+            Quand le chiffre sur la brique passe à 0, la balle rebondie et la brique disparait dans un second temps.
+            Les briques argent sont des briques incassables et la balle rebondie à son contact.
+            Lorsque la balle sort du bas de la fenêtre, celle-ci est détruite et une nouvelle balle est créée dans le canon.
+            Sur ce projet, je me suis occupé de la partie collision avec la balle, les briques et les bords de la fenêtre
+            de l'application. <br>
+            Les collisions de la balle et des briques sont faite par une fonction SFML qui permet de récupérer les bords du sprite.
+            Lorsqu'une collision est détectée que ce soit lorsque la balle touche un bord de la fenêtre du jeu ou
+            lorsqu'elle touche une brique, le vecteur de direction la balle est inversé selon l'axe touché.
+
+
+        </p>
+        <div class="h-30"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <img src="../img/works/Project10/Game2.png" class="img-fluid mx-auto d-block rounded"/>
+        </div>
+        <div class="col-md-6">
+            <img src="../img/works/Project10/Gameplay.gif" class="img-fluid mx-auto d-block rounded"/>
+        </div>
+    </div>
+</div>
+
+<a href="" class="cd-top"><i class="ion-android-arrow-up"></i></a>
+
+<script src="../js/jquery-2.1.1.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/menu.js"></script>
+<script src="../js/animated-headline.js"></script>
+<script src="../js/isotope.pkgd.min.js"></script>
+<script src="../js/custom.js"></script>
+</body>
+</html>
