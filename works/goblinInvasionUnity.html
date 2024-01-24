@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Goblin Invasion</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+
+    <script src="../js/modernizr.js"></script>
+</head>
+
+<body>
+<div id="preloader">
+    <div class="pre-container">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+</div>
+
+<div class="top-bar">
+    <h1>Goblin Invasion</h1>
+    <p><a href="../index.html" class="text-decoration-none">Home</a> / Goblin Invasion</p>
+</div>
+
+<div class="container main-container">
+    <div class="col-md-12">
+        <img src="../img/works/Project12/Unity.png" alt="" class="img-fluid"/>
+        <div class="h-30"></div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-8">
+            <h3>Goblin Invasion</h3>
+            <h5>Twitch plays avec les principes SOLID</h5>
+        </div>
+        <div class="col-md d-flex justify-content-md-end">
+            <a href="https://sathariel.itch.io/goblin-invasion" target="_blank" class="col-md-3 col-2"><img class="img-fluid itchio_logo"></a>
+        </div>
+        <div class="h-30"></div>
+    </div>
+
+    <div class="col-md-12">
+        <p>
+            Le principe du jeu étais de créer un jeu jouable sur Twicth avec des commandes liés au chat
+            tout en utilisant le principe SOLID.<br>
+            Qu'est-ce que le principe SOLID ? Le principe SOLID propose cinq principes
+            (Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion)
+            visant à créer des systèmes modulaires, évolutifs et faciles à maintenir en favorisant la clarté,
+            la flexibilité et la réutilisabilité du code. Ces principes encouragent
+            une conception orientée objet robuste et extensible.
+        </p>
+
+        <p>
+            L'objectif du jeu consiste à collaborer afin de protéger le château contre les vagues de monstres.
+            Trois catégories de créatures menaçantes sont à affronter : les zeppelins, les balistes et les gobelins.<br>
+            Le développement de ce jeu a impliqué une équipe de trois personnes, avec chacun ayant des responsabilités
+            spécifiques. Une personne a pris en charge l'intégration entre l'API Twitch et le jeu, une autre s'est
+            concentrée sur le design artistique, l'interface utilisateur (UI) et l'essence même du gameplay.
+            De mon côté, j'ai dirigé le développement du personnage joueur et m'occupais également d'une partie des ennemis.
+        </p>
+        <div class="h-30"></div>
+    </div>
+
+    <div class="row">
+        <figure class="figure col-md-6">
+            <img src="../img/works/Project12/Input.png"
+                 class="figure-img img-fluid rounded mx-auto d-block"/>
+            <figcaption class="figure-caption center">Les commandes disponibles</figcaption>
+        </figure>
+        <figure class="figure col-md-6">
+            <img src="../img/works/Project12/Twitch.png"
+                 class="figure-img img-fluid rounded mx-auto d-block"/>
+            <figcaption class="figure-caption center">Interface de connexion</figcaption>
+        </figure>
+    </div>
+
+    <div class="col-md-12">
+        <p>
+            Les joueurs apparaissent de manière aléatoire sur des points prédéfinis, affichant leur pseudonyme au-dessus
+            de leur tête, récupéré via l'API Twitch. L'attaque du joueur a été implémentée à l'aide du pattern command.
+            La majorité des données, telles que les dégâts infligés par une flèche ou les
+            différents temps de recharge, sont enregistrées dans des scriptables objects.
+            La sauvegarde est réalisée au sein d'une coroutine et d'une tâche qui est ensuite stockée dans un fichier
+            dans le dossier du jeu.
+        </p>
+        <div class="h-30"></div>
+    </div>
+
+    <div class="row">
+        <figure class="figure col-md">
+            <img src="../img/works/Project12/InGame.png"
+                 class="figure-img img-fluid rounded mx-auto d-block"/>
+        </figure>
+        <figure class="figure col-md">
+            <img src="../img/works/Project12/InGame2.png"
+                 class="figure-img img-fluid rounded mx-auto d-block"/>
+        </figure>
+    </div>
+</div>
+
+<a href="" class="cd-top"><i class="ion-android-arrow-up"></i></a>
+
+<script src="../js/jquery-2.1.1.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/menu.js"></script>
+<script src="../js/animated-headline.js"></script>
+<script src="../js/isotope.pkgd.min.js"></script>
+<script src="../js/custom.js"></script>
+</body>
+</html>

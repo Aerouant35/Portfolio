@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Let's tank them all</title>
+
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+
+    <script src="../js/modernizr.js"></script>
+</head>
+
+<body>
+<div id="preloader">
+    <div class="pre-container">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+</div>
+
+<div class="top-bar">
+    <h1>Let's tank them all</h1>
+    <p><a href="../index.html" class="text-decoration-none">Home</a> / Let's tank them all</p>
+</div>
+
+<div class="container main-container">
+    <div class="col-md-12">
+        <img src="../img/works/Project13/TankUnity.png" alt="" class="img-fluid"/>
+        <div class="h-30"></div>
+    </div>
+
+    <div class="col-md-12">
+        <h3>Let's tank them all</h3>
+        <h5>IA : déplacement et comportement</h5>
+        <div class="h-30"></div>
+    </div>
+
+    <div class="col-md-12">
+        <p>
+            Dans ce projet, nous avons utilisé le projet Tanks! d'Unity que nous avons adapté pour introduire les
+            features demandés comme pouvoir hot-swap le moyen de déplacement des tank depuis l'éditeur (A*, Dijkstra et le NavMesh).
+            Deux modes de jeu ont été développé pour ce projet un IA contre IA et Joueur contre IA.
+            De plus, trois comportements d'IA ont été élaborés : l'alpha, axé principalement sur le score, le bêta,
+            qui patrouille ou marque si la zone n'est pas déjà capturée, et l'oméga,
+            qui patrouille ou défend l'alpha en cas d'attaque.
+            <br>
+            La victoire se fait au nombre de points. Une équipe doit atteindre un certain nombre de points pour gagner
+            ou on regarde quelle équipe a le plus de points au bout d’un certain temps.
+            Pour gagner des points, la zone centrale doit être contrôlée, comme dans un “King of the Hill”.
+            Pour contrôler la zone, il faut qu’au moins un tank soit physiquement présent dedans durant un certain temps.
+            Une fois la zone contrôlée par une équipe, elle lui rapporte des
+            points s’il y a des tanks présents dans la zone. Plus il y a de tanks présents, plus il y a de points gagnés.
+        </p>
+
+        <div class="row">
+            <figure class="figure col-md">
+                <img src="../img/works/Project13/InGame.png"
+                     class="figure-img img-fluid rounded mx-auto d-block"/>
+                <figcaption class="figure-caption center">IA vs IA</figcaption>
+            </figure>
+            <figure class="figure col-md">
+                <img src="../img/works/Project13/InGame2.png"
+                     class="figure-img img-fluid rounded mx-auto d-block"/>
+                <figcaption class="figure-caption center">IA vs IA vs Joueur</figcaption>
+            </figure>
+        </div>
+
+        <p>
+            J'ai élaboré les algorithmes de déplacement des tanks, incluant A* et Dijkstra,
+            et implémenté la solution interne de déplacement de Unity, à savoir le NavMesh.
+            J'ai également instauré un mécanisme de hot-swap pour le choix du mode de déplacement des tanks,
+            mis en place une technique d'évitement d'obstacles basée sur des raycasts, permettant aux joueurs de
+            piloter un tank, et élaboré un système de scoring associé à la base centrale.
+        </p>
+        <div class="h-30"></div>
+    </div>
+
+    <div class="row">
+        <figure class="figure col-md-6">
+            <img src="../img/works/Project13/AStar.gif"
+                 class="figure-img img-fluid rounded mx-auto d-block"/>
+            <figcaption class="figure-caption center">A*</figcaption>
+        </figure>
+        <figure class="figure col-md-6">
+            <img src="../img/works/Project13/Dijsktra.gif"
+                 class="figure-img img-fluid rounded mx-auto d-block"/>
+            <figcaption class="figure-caption center">Dijsktra</figcaption>
+        </figure>
+    </div>
+
+    <div class="col-md-12">
+        <p>
+            La state machine a été utilisé pour la zone de capture, tandis que le behaviour tree a été utilisé pour
+            modéliser les divers comportements des IA. Ces deux systèmes sont gérés à l'aide de scriptables objects.
+            Les IA interagissent entre elles, partageant des informations telles que la connaissance des ennemis
+            poursuivant l'alpha de l'équipe et des ennemis présents sur la zone de capture.
+        </p>
+        <div class="h-30"></div>
+    </div>
+
+
+
+    <figure class="figure col-md">
+            <img src="../img/works/Project13/AI.png"
+                 class="figure-img img-fluid rounded mx-auto d-block"/>
+            <figcaption class="figure-caption center">Code couleur différent pour les IA</figcaption>
+        </figure>
+    </div>
+</div>
+
+<a href="" class="cd-top"><i class="ion-android-arrow-up"></i></a>
+
+<script src="../js/jquery-2.1.1.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/menu.js"></script>
+<script src="../js/animated-headline.js"></script>
+<script src="../js/isotope.pkgd.min.js"></script>
+<script src="../js/custom.js"></script>
+</body>
+</html>
