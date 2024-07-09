@@ -37,7 +37,7 @@ body {
     height: 100%;
     font-family: 'Poppins', sans-serif;
     line-height: 1.8;
-    color: #999
+    /* color: #999 */
 }
 
 .no-padding {
@@ -85,13 +85,13 @@ a {
 ==================================================*/
 
 h1 {
-    color: #393939;
+    /* color: #393939; */
     font-size: 60px;
     text-transform: uppercase;
 }
 
 h3 {
-    color: #393939;
+    /* color: #393939; */
 }
 
 h5 {
@@ -698,7 +698,8 @@ b i:last-child {
 
 .portfolio .categories-grid .categories ul li a {
     display: inline-block;
-    color: #60606e;
+    /* color: #60606e; */
+    color: #919191;
     padding: 0 10px;
     margin: 0 10px;
     -webkit-transition: all .2s ease-in-out .2s;
@@ -1113,6 +1114,18 @@ textarea:focus {
     content: url("../img/Itch.io/itchio-logo-textless-black.svg");
 }
 
+.card-table tbody tr th {
+    text-align: center;
+}
+
+.card-table tbody tr td {
+    padding: 5px 10px;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
 /* Responsive media queries
 ==================================================*/
 
@@ -1185,15 +1198,11 @@ textarea:focus {
 }
 
 @media (prefers-color-scheme: dark) {
-    body, #preloader {
-        background-color: #181818;
-        color: #fafafa;
-    }
-    .figure-caption, h3, .portfolio .categories-grid .categories ul li a, .top-bar h1 {
-        color: #999999;
-    }
     h5, a {
         color: #0074d4;
+    }
+    #preloader {
+        background-color: #212529;
     }
     .portfolio .categories-grid .categories ul li a.active, .portfolio_item .portfolio_item_hover .item_info em, .double-bounce1,
     .double-bounce2
@@ -1204,8 +1213,8 @@ textarea:focus {
         background: #0074d4;
     }
     .top-bar {
-        background: -webkit-linear-gradient( rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)), url(../img/01.jpg);
-        background: linear-gradient( rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)), url(../img/01.jpg);
+        background: -webkit-linear-gradient( rgba(30, 30, 30, 0.95), rgba(30, 30, 30, 0.95)), url(../img/01.jpg);
+        background: linear-gradient( rgba(30, 30, 30, 0.95), rgba(30, 30, 30, 0.95)), url(../img/01.jpg);
         background-size: cover;
         background-attachment: fixed;
         background-position: center center;
@@ -1216,4 +1225,4 @@ textarea:focus {
     .itchio_logo {
         content: url("../img/Itch.io/itchio-logo-textless-white.svg");
     }
-}
+} 

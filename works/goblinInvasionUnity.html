@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-bs-theme="dark">
 
 <head>
     <meta charset="utf-8">
@@ -12,6 +12,7 @@
     <link href="../ionicons/css/ionicons.min.css" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
 
+    <script src="https://kit.fontawesome.com/7cefe9aa6a.js" crossorigin="anonymous"></script>
     <script src="../js/modernizr.js"></script>
 </head>
 
@@ -37,19 +38,62 @@
     </div>
 
     <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-8 mb-4 mb-md-0">
             <h3>Goblin Invasion</h3>
             <h5>Twitch plays avec les principes SOLID</h5>
         </div>
-        <div class="col-md d-flex justify-content-md-end">
+        <div class="col-md mb-4 mb-md-0 d-flex justify-content-md-end">
+            <a href="https://github.com/SatharielFR/SOLID" target="_blank" class="col-md-3 col-2 me-md-3"><img class="img-fluid github_logo"></a>
             <a href="https://sathariel.itch.io/goblin-invasion" target="_blank" class="col-md-3 col-2"><img class="img-fluid itchio_logo"></a>
         </div>
-        <div class="h-30"></div>
+    </div>
+    <div class="row mb-4">
+        <div class="col-md-12">
+            <span class="badge rounded-pill text-bg-primary" style="font-size: 1rem">Unity</span>
+            <span class="badge rounded-pill text-bg-primary" style="font-size: 1rem">C#</span>
+            <span class="badge rounded-pill text-bg-primary" style="font-size: 1rem">SOLID</span>
+            <span class="badge rounded-pill text-bg-primary" style="font-size: 1rem">API Twitch</span>
+        </div>
     </div>
 
+    <div class="row" style="margin-bottom: 10%;">
+        <div class="col-md-6 mb-3 mb-md-0">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h4 class="card-title">A propos</h4>
+                    <p class="card-text">Nous avons développé un jeu lié à Twitch en suivant les principes SOLID, 
+                        où les commandes de chat permettent aux joueurs de collaborer pour 
+                        défendre un château contre des vagues de monstres.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h4 class="card-title">Info projet</h4>
+                    <table class="card-table">
+                        <tbody>
+                            <tr>
+                                <th scope="row"><i class="fa-solid fa-gamepad fa-lg"></i></th>
+                                <td>Unity 2020.3.34</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><i class="fa-solid fa-clock fa-lg"></i></th>
+                                <td>3 semaines</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><i class="fa-solid fa-users fa-lg"></i></th>
+                                <td>3 devs</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="col-md-12">
         <p>
-            Le principe du jeu étais de créer un jeu jouable sur Twicth avec des commandes liés au chat
+            Le principe du jeu étais de créer un jeu jouable sur Twitch avec des commandes liés au chat
             tout en utilisant le principe SOLID.<br>
             Qu'est-ce que le principe SOLID ? Le principe SOLID propose cinq principes
             (Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion)

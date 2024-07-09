@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-bs-theme="dark">
 
 <head>
     <meta charset="utf-8">
@@ -12,6 +12,7 @@
     <link href="../ionicons/css/ionicons.min.css" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
 
+    <script src="https://kit.fontawesome.com/7cefe9aa6a.js" crossorigin="anonymous"></script>
     <script src="../js/modernizr.js"></script>
 </head>
 
@@ -32,122 +33,100 @@
 
 <div class="container main-container">
     <div class="col-md-12">
-        <img src="../img/works/Project5/Unity.jpg" alt="" class="img-fluid"/>
+        <img src="../img/works/Project15/Unity.png" alt="" class="img-fluid"/>
         <div class="h-30"></div>
     </div>
 
     <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-8 mb-4 mb-md-0">
             <h3>Middle Blades</h3>
             <h5>Un idle hypercasual</h5>
         </div>
-        <div class="col-md d-flex justify-content-md-end">
+        <div class="col-md mb-4 mb-md-0 d-flex justify-content-md-end">
+            <a href="https://github.com/Leniumite/HyperCasuIdle" target="_blank" class="col-md-3 col-2 me-md-3"><img class="img-fluid github_logo"></a>
             <a href="https://aerouant.itch.io/middleblades" target="_blank" class="col-md-3 col-2"><img class="img-fluid itchio_logo"></a>
         </div>
-        <div class="h-30"></div>
+    </div>
+    <div class="row mb-4">
+        <div class="col-md-12">
+            <span class="badge rounded-pill text-bg-primary" style="font-size: 1rem">Unity</span>
+            <span class="badge rounded-pill text-bg-primary" style="font-size: 1rem">C#</span>
+            <span class="badge rounded-pill text-bg-primary" style="font-size: 1rem">Hypercasual</span>
+            <span class="badge rounded-pill text-bg-primary" style="font-size: 1rem">Ads</span>
+        </div>
     </div>
 
+    <div class="row" style="margin-bottom: 10%;">
+        <div class="col-md-6 mb-3 mb-md-0">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h4 class="card-title">A propos</h4>
+                    <p class="card-text">Lors d'un projet, trois jeux hypercasual sont créés en équipe de cinq, 
+                        chacun intégrant des publicités ou des achats in-app. 
+                        Celui-ci un jeu de type idle où les joueurs accumulent 
+                        automatiquement des ressources pour améliorer leur vitesse d'attaque et leurs dégâts.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h4 class="card-title">Info projet</h4>
+                    <table class="card-table">
+                        <tbody>
+                            <tr>
+                                <th scope="row"><i class="fa-solid fa-gamepad fa-lg"></i></th>
+                                <td>Unity 2021.3.25</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><i class="fa-solid fa-clock fa-lg"></i></th>
+                                <td>1 semaine</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><i class="fa-solid fa-users fa-lg"></i></th>
+                                <td>2 devs</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="col-md-12">
         <p>
-            Le principe du jeu étais de créer un jeu jouable sur Twicth avec des commandes liés au chat
-            tout en utilisant le principe SOLID.<br>
-            Qu'est-ce que le principe SOLID ? Le principe SOLID propose cinq principes
-            (Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion)
-            visant à créer des systèmes modulaires, évolutifs et faciles à maintenir en favorisant la clarté,
-            la flexibilité et la réutilisabilité du code. Ces principes encouragent
-            une conception orientée objet robuste et extensible.
+            L'objectif de ce projet était de créer trois jeux hypercasual, avec une équipe de cinq personnes se
+            répartissant la production individuelle. Chaque jeu devait intégrer des publicités et/ou des achats in-app.
+            <br>
+            Le jeu que j'ai développé, en collaboration avec une autre personne, est de type idle. Un idle est un genre
+            de jeu où les joueurs progressent en accumulant des ressources automatiquement générées, favorisant une
+            expérience de jeu décontractée et continue même en l'absence d'interaction active. Il est également possible
+            d'accélérer la progression et d'améliorer ses statistiques (vitesse d'attaque, dégâts, temps nécessaire
+            pour vaincre le boss de la zone) en effectuant des clics pour apporter de l'aide ou accélérer le processus.
+            Pour élaborer ce jeu, nous nous sommes inspirés du jeu mobile "Tap Titans".
         </p>
 
         <p>
-
-            Je me suis inspiré des donjons des zelda 2D (Link's Awakening). Mon jeu est en 2D avec pour
-            énigme la récupération de la clé qui permet d'ouvrir la porte du boss.
-            Le joueur a trois points de vie et quand ses points de vie atteignent zéro, c'est la fin de la partie. Si
-            le joueur tue le boss, la partie est gagnée.<br>
-            Pour l'animator du joueur, il y a deux blend tree : un pour quand il marche et un pour ses attaques.
-            Pour les attaques du personages, j'ai inclus un polygon collider pour que la hitbox épouse l'animation
-            de l'attaque.<br>
-            Lorsque le joueur veut changer de salle, il entre en contact avec la trigger box qui se trouve juste
-            avant la sortie de celle-ci.
-            Alors le script fait faire un déplacement du joueur et de la caméra pour se recentrer sur la salle
-            suivante.
+            Ayant déjà une expertise dans l'intégration et l'utilisation des publicités, j'ai pris en charge le design,
+            l'interface du jeu et une partie du gameplay. J'ai conçu l'environnement où évolue le héros, gérant la
+            transition lors de la défaite de l'ennemi. J'ai également mis en place le système d'amélioration du héros,
+            créé un boss pour marquer la fin d'un niveau et le passage au suivant, tout en ajoutant des effets et des
+            particules pour renforcer son attrait visuel. La publicité a été intégrée via le service intégré de Unity.
         </p>
         <div class="h-30"></div>
     </div>
 
     <div class="row">
-        <figure class="figure col-md">
-            <img src="../img/works/Project5/AnimatorPlayer.jpg"
+        <figure class="figure col-md-4">
+            <img src="../img/works/Project15/InGame.png"
                  class="figure-img img-fluid rounded mx-auto d-block"/>
-            <figcaption class="figure-caption center">Animator du joueur</figcaption>
-        </figure>
-        <figure class="figure col-md-3">
-            <img src="../img/works/Project5/Attack.jpg"
-                 class="figure-img img-fluid rounded mx-auto d-block"/>
-            <figcaption class="figure-caption center">Polygon collider de l'attaque</figcaption>
-        </figure>
-        <figure class="figure col-md">
-            <img src="../img/works/Project5/RoomMove.jpg"
-                 class="figure-img img-fluid rounded mx-auto d-block"/>
-            <figcaption class="figure-caption center">Box collider pour changer de salle</figcaption>
-        </figure>
-    </div>
-
-    <div class="col-md-12">
-        <p>
-            Les ennemis sont limités, ils ne peuvent que suivre le joueur et quand celui-ci rentre dans la zone de la
-            hitbox de l'ennemi, il perd un point de vie et se fait repousser.
-            Mais si le joueur attaque l'ennemi, l'ennemi perd un point de vie et se fait repousser. L'ennemi a trois
-            points de vie et quand il atteint zéro point de vie, il disparaît.<br>
-            Quand le joueur entre la hitbox de la clé, le joueur récupère la clé, celle-ci disparaît de la salle et
-            s'affiche sur l'UI du joueur.
-            Le joueur qui a la clé et qui s'approche de la trigger box de la porte du boss et appuie sur la touche
-            "E", celle-ci s'ouvre et permet au joueur d'affronter le boss.
-        </p>
-        <div class="h-30"></div>
-    </div>
-
-    <div class="row">
-        <figure class="figure col-md">
-            <img src="../img/works/Project5/Enemy.jpg"
-                 class="figure-img img-fluid rounded mx-auto d-block"/>
-            <figcaption class="figure-caption center">Ennemi et sa hitbox</figcaption>
-        </figure>
-        <figure class="figure col-md">
-            <img src="../img/works/Project5/KeyUI.jpg"
-                 class="figure-img img-fluid rounded mx-auto d-block"/>
-            <figcaption class="figure-caption center">Affiche de clé sur l'UI</figcaption>
         </figure>
         <figure class="figure col-md-4">
-            <img src="../img/works/Project5/Door.jpg"
+            <img src="../img/works/Project15/Boss.png"
                  class="figure-img img-fluid rounded mx-auto d-block"/>
-            <figcaption class="figure-caption center">Box collider de la porte</figcaption>
-            <div class="h-30"></div>
         </figure>
-    </div>
-
-    <div class="col-md-12">
-        <p>
-            A l'entrée du personnage, le boss commence à attaquer. Ses attaques sont des boules de feu qui ciblent le
-            personnage.
-            Quand le boss atteint la moitié de sa vie, il entre dans sa deuxième phase, sa couleur devient rouge et
-            sa cadence de tire est augmentée du double.
-            Quand le boss n'a plus de vie, il disparaît et la partie est finie.
-        </p>
-        <div class="h-30"></div>
-    </div>
-
-    <div class="row">
-        <figure class="figure col-md-6">
-            <img src="../img/works/Project5/Boss.jpg"
+        <figure class="figure col-md-4">
+            <img src="../img/works/Project15/InGame2.png"
                  class="figure-img img-fluid rounded mx-auto d-block"/>
-            <figcaption class="figure-caption center">Le boss avec une boule de feu lancé</figcaption>
-
-        </figure>
-        <figure class="figure col-md-6">
-            <img src="../img/works/Project5/BossP2.jpg"
-                 class="figure-img img-fluid rounded mx-auto d-block"/>
-            <figcaption class="figure-caption center">Deuxième phase du boss</figcaption>
         </figure>
     </div>
 </div>
