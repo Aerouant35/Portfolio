@@ -11,8 +11,19 @@ $(window).load(function () {
         setLanguagePreference(selectedLang)
     });
 
-    $('.lang-choice').prop("disabled", function() {return $(this).data('lang') == userPreferredLanguage;});
-      
+    $('.lang-choice').prop("disabled", function() {
+        return $(this).data('lang') == userPreferredLanguage;
+    }).css('opacity', function() {
+        return $(this).data('lang') == userPreferredLanguage ? '1' : '0.3';
+    }).hover(function() {
+        $(this).css('opacity', '1');
+    }, function() {
+        $(this).css('opacity', function() {
+            return $(this).data('lang') == userPreferredLanguage ? '1' : '0.3';
+        });
+    });
+    
+    
     // preloader
     $('#status').fadeOut(); // will first fade out the loading animation
     $('#preloader').delay(550).fadeOut('slow'); // will fade out the white DIV that covers the website.
