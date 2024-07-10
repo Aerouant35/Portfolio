@@ -77,7 +77,7 @@ $(window).load(function () {
 
 function loadLanguage(lang) {
     $('html').attr('lang', lang);
-    $.getJSON('/languages/' + lang + '.json', function(translations) {
+    $.getJSON('../languages/' + lang + '.json', function(translations) {
         $('[data-translate]').each(function() {
             var key = $(this).data('translate');
             $(this).html(translations[key] || 'Missing translation');
