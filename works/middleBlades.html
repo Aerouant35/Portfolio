@@ -26,6 +26,13 @@
     </div>
 </div>
 
+<div style="position: absolute; right: 100px;">
+    <button type="button" class="btn btn-link lang-choice" data-lang="fr"><img src="/img/languages/fr.png" class="img-fluid" width="75" height="75"></button>
+</div>
+<div style="position: absolute; right: 0;">
+    <button type="button" class="btn btn-link lang-choice" data-lang="en"><img src="/img/languages/usa_uk.png" class="img-fluid" width="75" height="75"></button>
+</div>
+
 <div class="top-bar">
     <h1>Middle Blades</h1>
     <p><a href="../index.html" class="text-decoration-none">Home</a> / Middle Blades</p>
@@ -40,7 +47,7 @@
     <div class="row">
         <div class="col-md-8 mb-4 mb-md-0">
             <h3>Middle Blades</h3>
-            <h5>Un idle hypercasual</h5>
+            <h5 data-translate="middleBlades_subtitle"></h5>
         </div>
         <div class="col-md mb-4 mb-md-0 d-flex justify-content-md-end">
             <a href="https://github.com/Leniumite/HyperCasuIdle" target="_blank" class="col-md-3 col-2 me-md-3"><img class="img-fluid github_logo"></a>
@@ -60,18 +67,15 @@
         <div class="col-md-6 mb-3 mb-md-0">
             <div class="card h-100">
                 <div class="card-body">
-                    <h4 class="card-title">A propos</h4>
-                    <p class="card-text">Lors d'un projet, trois jeux hypercasual sont créés en équipe de cinq, 
-                        chacun intégrant des publicités ou des achats in-app. 
-                        Celui-ci un jeu de type idle où les joueurs accumulent 
-                        automatiquement des ressources pour améliorer leur vitesse d'attaque et leurs dégâts.</p>
+                    <h4 class="card-title" data-translate="about"></h4>
+                    <p class="card-text" data-translate="middleBlades_about"></p>
                 </div>
             </div>
         </div>
         <div class="col-md-6">
             <div class="card h-100">
                 <div class="card-body">
-                    <h4 class="card-title">Info projet</h4>
+                    <h4 class="card-title" data-translate="project_info"></h4>
                     <table class="card-table">
                         <tbody>
                             <tr>
@@ -80,7 +84,7 @@
                             </tr>
                             <tr>
                                 <th scope="row"><i class="fa-solid fa-clock fa-lg"></i></th>
-                                <td>1 semaine</td>
+                                <td>1 <p class="d-inline" data-translate="week"></p></td>
                             </tr>
                             <tr>
                                 <th scope="row"><i class="fa-solid fa-users fa-lg"></i></th>
@@ -93,25 +97,9 @@
         </div>
     </div>
     <div class="col-md-12">
-        <p>
-            L'objectif de ce projet était de créer trois jeux hypercasual, avec une équipe de cinq personnes se
-            répartissant la production individuelle. Chaque jeu devait intégrer des publicités et/ou des achats in-app.
-            <br>
-            Le jeu que j'ai développé, en collaboration avec une autre personne, est de type idle. Un idle est un genre
-            de jeu où les joueurs progressent en accumulant des ressources automatiquement générées, favorisant une
-            expérience de jeu décontractée et continue même en l'absence d'interaction active. Il est également possible
-            d'accélérer la progression et d'améliorer ses statistiques (vitesse d'attaque, dégâts, temps nécessaire
-            pour vaincre le boss de la zone) en effectuant des clics pour apporter de l'aide ou accélérer le processus.
-            Pour élaborer ce jeu, nous nous sommes inspirés du jeu mobile "Tap Titans".
-        </p>
+        <p data-translate="middleBlades_p1"></p>
 
-        <p>
-            Ayant déjà une expertise dans l'intégration et l'utilisation des publicités, j'ai pris en charge le design,
-            l'interface du jeu et une partie du gameplay. J'ai conçu l'environnement où évolue le héros, gérant la
-            transition lors de la défaite de l'ennemi. J'ai également mis en place le système d'amélioration du héros,
-            créé un boss pour marquer la fin d'un niveau et le passage au suivant, tout en ajoutant des effets et des
-            particules pour renforcer son attrait visuel. La publicité a été intégrée via le service intégré de Unity.
-        </p>
+        <p data-translate="middleBlades_p2"></p>
         <div class="h-30"></div>
     </div>
 

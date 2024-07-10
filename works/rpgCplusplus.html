@@ -25,6 +25,13 @@
     </div>
 </div>
 
+<div style="position: absolute; right: 100px;">
+    <button type="button" class="btn btn-link lang-choice" data-lang="fr"><img src="/img/languages/fr.png" class="img-fluid" width="75" height="75"></button>
+</div>
+<div style="position: absolute; right: 0;">
+    <button type="button" class="btn btn-link lang-choice" data-lang="en"><img src="/img/languages/usa_uk.png" class="img-fluid" width="75" height="75"></button>
+</div>
+
 <div class="top-bar">
     <h1>RPG C++ console</h1>
     <p><a href="../index.html" class="text-decoration-none">Home</a> / RPG C++ console</p>
@@ -37,7 +44,7 @@
 
     <div class="col-md-12 mb-3">
         <h3>RPG C++ console</h3>
-        <h5>Projet C++, partie 1</h5>
+        <h5 data-translate="rpgCplusplus_subtitle"></h5>
     </div>
 
     <div class="row mb-4">
@@ -51,18 +58,15 @@
         <div class="col-md-6 mb-3 mb-md-0">
             <div class="card h-100">
                 <div class="card-body">
-                    <h4 class="card-title">A propos</h4>
-                    <p class="card-text">Ce premier projet en C++ consiste à créer un RPG 
-                        en mode texte pour se concentrer sur l'apprentissage de la syntaxe et la 
-                        structuration du code. Le jeu comporte un héros se déplaçant dans un monde 2D, 
-                        ramassant des trésors, des armes et combattant des ennemis.</p>
+                    <h4 class="card-title" data-translate="about"></h4>
+                    <p class="card-text" data-translate="rpgCplusplus_about"></p>
                 </div>
             </div>
         </div>
         <div class="col-md-6">
             <div class="card h-100">
                 <div class="card-body">
-                    <h4 class="card-title">Info projet</h4>
+                    <h4 class="card-title" data-translate="project_info"></h4>
                     <table class="card-table">
                         <tbody>
                             <tr>
@@ -71,7 +75,7 @@
                             </tr>
                             <tr>
                                 <th scope="row"><i class="fa-solid fa-clock fa-lg"></i></th>
-                                <td>1 semaine</td>
+                                <td>1 <p class="d-inline" data-translate="week"></p></td>
                             </tr>
                             <tr>
                                 <th scope="row"><i class="fa-solid fa-users fa-lg"></i></th>
@@ -85,29 +89,9 @@
     </div>
 
     <div class="col-md-12">
-        <p>
-            Ce projet est le premier en C++, le but est de réaliser un jeu en mode texte en C++.
-            Le choix du mode texte est pour simplifier la partie input/output pour plus se concentrer sur
-            l'apprentissage de la syntaxe du langage, la structuration du code.
-            Le jeu attendu est un RPG avec un héros qui se déplace dans un monde en 2D, ramasse des trésors,
-            des armes, des équipements et combat des ennemis.
-        </p>
+        <p data-translate="rpgCplusplus_p1"></p>
 
-        <p>
-            L'affichage est fait pour savoir où le personnage peut aller, ce qu'il y a dans la pièce actuelle et les
-            statistiques du personnage (vie, dégâts, armure, argent).
-            Comme le jeu est en console donc tous les inputs sont des touches du clavier qu'il suffit de presser.
-            Pour connaître toutes les touches disponibles, il y a une aide au début du jeu et qui peut être appelée
-            tout au long du jeu.
-            (Si le personnage veut se déplacer d'une salle, il doit appuyer sur la touche correspondant à un point
-            cardinal (N, S, E, W)).<br>
-            La génération de salles, de trésor, d'arme, d'équipement, et d'ennemi est hardcodée.
-            J'ai rajouté une condition pour l'affrontement des ennemis par exemple, il faut un arc pour affronter une
-            chauve-souris.
-            Lorsque qu'on appuie sur la touche d'attaque pour affronter un ennemi, il y a une chance sur trois que
-            ce soit le personnage qui prend des dégâts et non l'ennemi.
-            Quand l'ennemi meurt, il laisse tomber de l'argent qui est ajouté à la bourse du personnage.
-        </p>
+        <p data-translate="rpgCplusplus_p2"></p>
         <div class="h-30"></div>
     </div>
 
@@ -115,30 +99,18 @@
         <figure class="figure col-md">
             <img src="../img/works/Project6/BowForBat.jpg"
                  class="figure-img img-fluid rounded mx-auto d-block"/>
-            <figcaption class="figure-caption center">Condition pour affronter la chauve-souris</figcaption>
+            <figcaption class="figure-caption center" data-translate="rpgCplusplus_figcaption_1"></figcaption>
         </figure>
         <figure class="figure col-md">
             <img src="../img/works/Project6/Fight.jpg"
                  class="figure-img img-fluid rounded mx-auto d-block"/>
-            <figcaption class="figure-caption center">Combat et gain d'argent</figcaption>
+            <figcaption class="figure-caption center" data-translate="rpgCplusplus_figcaption_2"></figcaption>
             <div class="h-30"></div>
         </figure>
     </div>
 
     <div class="col-md-12">
-        <p>
-            Certaines salles contiennent des armes ou de l'armure. Une fois récupérée, les armes amélioreront
-            l'attaque et l'armure améliorera la défense de façon permanente.
-            J'ai mis en place de l'héritage sur les armes et les armures dont la classe mère est "Equipment".
-            Il est également possible de trouver des trésors qui contiennent des pièces d'or. Elles peuvent être
-            récupérées et s'ajouteront à la bourse.<br>
-            En bonus, j'ai rajouté des potions, il en existe deux types : une de soin et une de défense. La console
-            donnera le montant de point de vie ou de défense que la potion donnera.
-            La potion de soin va ajouter des points de vie même si le personnage est au maximum de sa vie.
-            La potion de défense va ajouter de la défense, mais elle est temporaire. La défense reçue permettra
-            d'encaisser
-            les dégâts que fait un ennemi, mais disparaîtra suite à ça.
-        </p>
+        <p data-translate="rpgCplusplus_p3"></p>
         <div class="h-30"></div>
     </div>
 
@@ -146,17 +118,17 @@
         <figure class="figure col-md">
             <img src="../img/works/Project6/Armor.jpg"
                  class="figure-img img-fluid rounded mx-auto d-block"/>
-            <figcaption class="figure-caption center">L'armure ajouté à la statistique d'armure</figcaption>
+            <figcaption class="figure-caption center" data-translate="rpgCplusplus_figcaption_3"></figcaption>
         </figure>
         <figure class="figure col-md">
             <img src="../img/works/Project6/Coin.jpg"
                  class="figure-img img-fluid rounded mx-auto d-block"/>
-            <figcaption class="figure-caption center">Argent ajouté à la bourse</figcaption>
+            <figcaption class="figure-caption center" data-translate="rpgCplusplus_figcaption_4"></figcaption>
         </figure>
         <figure class="figure col-md">
             <img src="../img/works/Project6/Potion.jpg"
                  class="figure-img img-fluid rounded mx-auto d-block"/>
-            <figcaption class="figure-caption center">Potion de soins</figcaption>
+            <figcaption class="figure-caption center" data-translate="rpgCplusplus_figcaption_5"></figcaption>
         </figure>
     </div>
 </div>

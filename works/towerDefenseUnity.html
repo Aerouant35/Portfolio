@@ -26,6 +26,13 @@
     </div>
 </div>
 
+<div style="position: absolute; right: 100px;">
+    <button type="button" class="btn btn-link lang-choice" data-lang="fr"><img src="/img/languages/fr.png" class="img-fluid" width="75" height="75"></button>
+</div>
+<div style="position: absolute; right: 0;">
+    <button type="button" class="btn btn-link lang-choice" data-lang="en"><img src="/img/languages/usa_uk.png" class="img-fluid" width="75" height="75"></button>
+</div>
+
 <div class="top-bar">
     <h1>Tower defense</h1>
     <p><a href="../index.html" class="text-decoration-none">Home</a> / Tower defense</p>
@@ -39,7 +46,7 @@
 
     <div class="col-md-12 mb-3">
         <h3>Tower defense</h3>
-        <h5>Utilisation des notions acquises, partie 1</h5>
+        <h5 data-translate="towerDefense_subtitle"></h5>
     </div>
     <div class="row mb-4">
         <div class="col-md-12">
@@ -54,18 +61,15 @@
         <div class="col-md-6 mb-3 mb-md-0">
             <div class="card h-100">
                 <div class="card-body">
-                    <h4 class="card-title">A propos</h4>
-                    <p class="card-text">Ce projet consistait à appliquer les 
-                        compétences acquises lors des précédents projets en développant un jeu de type tower defense. 
-                        Le jeu devait inclure deux types d'ennemis, deux types d'objets pour aider le joueur, 
-                        et un personnage contrôlable.</p>
+                    <h4 class="card-title" data-translate="about"></h4>
+                    <p class="card-text" data-translate="towerDefense_about"></p>
                 </div>
             </div>
         </div>
         <div class="col-md-6">
             <div class="card h-100">
                 <div class="card-body">
-                    <h4 class="card-title">Info projet</h4>
+                    <h4 class="card-title" data-translate="project_info"></h4>
                     <table class="card-table">
                         <tbody>
                             <tr>
@@ -74,7 +78,7 @@
                             </tr>
                             <tr>
                                 <th scope="row"><i class="fa-solid fa-clock fa-lg"></i></th>
-                                <td>1 semaine</td>
+                                <td>1 <p class="d-inline" data-translate="week"></p></td>
                             </tr>
                             <tr>
                                 <th scope="row"><i class="fa-solid fa-users fa-lg"></i></th>
@@ -87,26 +91,9 @@
         </div>
     </div>
     <div class="col-md-12">
-        <p>
-            Sur ce projet, je devais utiliser tout ce qu'on a appris au cours des précédents projets et les
-            réutiliser dans celui-ci.
-            Pour ce projet, le jeu attendu était un tower defense. Il devait comporter deux types d'ennemis et deux
-            types d'objets plaçable pour aider le joueur et un personnage contrôlable.
-        </p>
+        <p data-translate="towerDefense_p1"></p>
 
-        <p>
-            Sur ce projet, je me suis inspiré des tower defense mobile, le jeu est en 2D avec un chemin unique que
-            les ennemis empruntent pour atteindre l'autre côté de la carte.
-            En cliquant sur le chemin, le personnage contrôlable s'y déplacera et il attaque automatiquement les
-            ennemis dès qu'il entre dans sa zone.<br>
-            Les deux types de tours sont plaçable à des endroits prédéfinis. Elles sont toutes les deux
-            différentes avec des dégâts différents. Il est également possible de vendre les tours ou de les
-            améliorer à un second niveau.<br>
-            Le système vague est simple avec 5 vagues avec un nombre croissant d'ennemis. Il y a deux types d'ennemi
-            avec des points de vie différents.
-            Le joueur perd un point de vie à chaque ennemi qui atteint la fin du chemin. Quand le joueur a zéro
-            point de vie la partie se termine.
-        </p>
+        <p data-translate="towerDefense_p2"></p>
         <div class="h-30"></div>
     </div>
 
@@ -114,15 +101,13 @@
         <figure class="figure col-md">
             <img src="../img/works/Project4/Game.jpg"
                  class="figure-img img-fluid rounded mx-auto d-block"/>
-            <figcaption class="figure-caption center">Le jeu avec un timer pour les vagues, les points de vie et
-                l'argent du joueur
-            </figcaption>
+            <figcaption class="figure-caption center" data-translate="towerDefense_figcaption_1"></figcaption>
 
         </figure>
         <figure class="figure col-md">
             <img src="../img/works/Project4/ManagementTower.jpg"
                  class="figure-img img-fluid rounded mx-auto d-block"/>
-            <figcaption class="figure-caption center">Amélioration ou vente de la tour</figcaption>
+            <figcaption class="figure-caption center" data-translate="towerDefense_figcaption_2"></figcaption>
         </figure>
     </div>
 </div>

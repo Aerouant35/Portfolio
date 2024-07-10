@@ -25,6 +25,13 @@
     </div>
 </div>
 
+<div style="position: absolute; right: 100px;">
+    <button type="button" class="btn btn-link lang-choice" data-lang="fr"><img src="/img/languages/fr.png" class="img-fluid" width="75" height="75"></button>
+</div>
+<div style="position: absolute; right: 0;">
+    <button type="button" class="btn btn-link lang-choice" data-lang="en"><img src="/img/languages/usa_uk.png" class="img-fluid" width="75" height="75"></button>
+</div>
+
 <div class="top-bar">
     <h1>Breakout</h1>
     <p><a href="../index.html" class="text-decoration-none">Home</a> / Breakout</p>
@@ -39,7 +46,7 @@
     <div class="row">
         <div class="col-md-8 mb-4 mb-md-0">
             <h3>Breakout</h3>
-            <h5>Projet C++ avec SFML</h5>
+            <h5 data-translate="breakout_subtitle"></h5>
         </div>
         <div class="col-md mb-4 mb-md-0 d-flex justify-content-md-end">
             <a href="https://github.com/Aerouant35/SFML-Breakout" target="_blank" class="col-md-3 col-2 me-md-3"><img class="img-fluid github_logo"></a>
@@ -56,16 +63,15 @@
         <div class="col-md-6 mb-3 mb-md-0">
             <div class="card h-100">
                 <div class="card-body">
-                    <h4 class="card-title">A propos</h4>
-                    <p class="card-text">Ce projet vise à nous familiariser avec l'API SFML en développant, 
-                        en binôme, un jeu de casse-briques où un canon remplace la barre habituelle.</p>
+                    <h4 class="card-title" data-translate="about"></h4>
+                    <p class="card-text" data-translate="breakout_about"></p>
                 </div>
             </div>
         </div>
         <div class="col-md-6">
             <div class="card h-100">
                 <div class="card-body">
-                    <h4 class="card-title">Info projet</h4>
+                    <h4 class="card-title" data-translate="project_info"></h4>
                     <table class="card-table">
                         <tbody>
                             <tr>
@@ -74,7 +80,7 @@
                             </tr>
                             <tr>
                                 <th scope="row"><i class="fa-solid fa-clock fa-lg"></i></th>
-                                <td>1 semaine</td>
+                                <td>1 <p class="d-inline" data-translate="week"></p></td>
                             </tr>
                             <tr>
                                 <th scope="row"><i class="fa-solid fa-users fa-lg"></i></th>
@@ -88,30 +94,9 @@
     </div>
 
     <div class="col-md-12">
-        <p>
-            Ce projet a pour but de nous apprendre l'utilisation de l'API SFML. Elle permet l'affichage d'images,
-            de formes géométriques et la gestion des évènements utilisateurs.
-            Avec l'API SFML, en groupe de deux, nous devions créer un jeu de casse brique, mais à la place
-            de la barre, on utilise un canon qui permet de tirer une balle dans toutes les directions.
-        </p>
+        <p data-translate="breakout_p1"></p>
 
-        <p>
-            Lorsque le joueur fait un clic sur le bouton gauche de la souris, on récupère la position de la souris sur
-            la fenêtre. Ensuite on fait la différence en la position de la balle (qui est dans le canon)
-            et la position de la souris, on normalise le vecteur qui en sort et on le donne à la balle avec une vélocité,
-            la balle part dans la direction souhaitée.<br>
-            Quand la balle touche une brique avec un chiffre dessus, la balle rebondie et le chiffre sur la brique décrémente.
-            Quand le chiffre sur la brique passe à 0, la balle rebondie et la brique disparait dans un second temps.
-            Les briques argent sont des briques incassables et la balle rebondie à son contact.
-            Lorsque la balle sort du bas de la fenêtre, celle-ci est détruite et une nouvelle balle est créée dans le canon.
-            Sur ce projet, je me suis occupé de la partie collision avec la balle, les briques et les bords de la fenêtre
-            de l'application. <br>
-            Les collisions de la balle et des briques sont faite par une fonction SFML qui permet de récupérer les bords du sprite.
-            Lorsqu'une collision est détectée que ce soit lorsque la balle touche un bord de la fenêtre du jeu ou
-            lorsqu'elle touche une brique, le vecteur de direction la balle est inversé selon l'axe touché.
-
-
-        </p>
+        <p data-translate="breakout_p2"></p>
         <div class="h-30"></div>
     </div>
 

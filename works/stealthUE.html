@@ -25,6 +25,13 @@
     </div>
 </div>
 
+<div style="position: absolute; right: 100px;">
+    <button type="button" class="btn btn-link lang-choice" data-lang="fr"><img src="/img/languages/fr.png" class="img-fluid" width="75" height="75"></button>
+</div>
+<div style="position: absolute; right: 0;">
+    <button type="button" class="btn btn-link lang-choice" data-lang="en"><img src="/img/languages/usa_uk.png" class="img-fluid" width="75" height="75"></button>
+</div>
+
 <div class="top-bar">
     <h1>Stealth project</h1>
     <p><a href="../index.html" class="text-decoration-none">Home</a> / Stealth project</p>
@@ -39,7 +46,7 @@
     <div class="row">
         <div class="col-md-8 mb-4 mb-md-0">
             <h3>Stealth project</h3>
-            <h5>Jeu d'infiltration développé en équipe de trois</h5>
+            <h5 data-translate="stealthUE_subtitle"></h5>
         </div>
         <div class="col-md mb-4 mb-md-0 d-flex justify-content-md-end">
             <a href="https://github.com/Aerouant35/InfiltrationUE" target="_blank" class="col-md-3 col-2 me-md-3"><img class="img-fluid github_logo"></a>
@@ -61,16 +68,15 @@
         <div class="col-md-6 mb-3 mb-md-0">
             <div class="card h-100">
                 <div class="card-body">
-                    <h4 class="card-title">A propos</h4>
-                    <p class="card-text">Nous avons utilisé Unreal Engine 4 et du C++ pour créer un jeu d'infiltration avec des ennemis traquant le joueur.
-                         Le joueur doit collecter de la nourriture et l'apporter à sa cachette tout en évitant les ennemis.</p>
+                    <h4 class="card-title" data-translate="about"></h4>
+                    <p class="card-text" data-translate="stealthUE_about"></p>
                 </div>
             </div>
         </div>
         <div class="col-md-6">
             <div class="card h-100">
                 <div class="card-body">
-                    <h4 class="card-title">Info projet</h4>
+                    <h4 class="card-title" data-translate="project_info"></h4>
                     <table class="card-table">
                         <tbody>
                             <tr>
@@ -79,7 +85,7 @@
                             </tr>
                             <tr>
                                 <th scope="row"><i class="fa-solid fa-clock fa-lg"></i></th>
-                                <td>4 semaines</td>
+                                <td>4 <p class="d-inline" data-translate="weeks"></p></td>
                             </tr>
                             <tr>
                                 <th scope="row"><i class="fa-solid fa-users fa-lg"></i></th>
@@ -92,25 +98,9 @@
         </div>
     </div>
     <div class="col-md-12">
-        <p>
-            Ce projet a pour but d'utiliser le moteur Unreal Engine 4 avec le C++ mais aussi avec les fonctionnalités
-            proposées par le moteur.
-            Le but est de créer un niveau de jeu type infiltration développer en équipe de trois.
-            Le jeu doit comporter des IA qui poursuive le joueur s'il est repéré ou sinon il doit déposer de la
-            nourriture à différents endroits dans le niveau.
-            Une UI pour connaitre la progression du joueur.
-            Et un personnage jouable qui peut prendre de la nourriture et l'emmener à sa cachette.<br>
-            La boucle de gameplay est le joueur qui commence dans sa cachette,
-            il doit ramener un par un de la nourriture apporté dans la salle par les ennemis, qu’il doit éviter.
-            Si le joueur entre en contact avec un ennemi, il perd. Si le joueur ramène 5 aliments dans sa cachette, il
-            gagne.
-        </p>
+        <p data-translate="stealthUE_p1"></p>
 
-        <p>
-            Sur ce projet, je me suis occupé de tout ce qui est UI. J'ai commencé par l'interface du joueur qui est
-            une progress bar avec une image de la nourriture qu'il doit récupérer pour montrer la progression du joueur.
-            Ensuite j'ai fait les écrans de victoire et de défaite. Les boutons sont développés en C++.
-        </p>
+        <p data-translate="stealthUE_p2"></p>
         <div class="h-30"></div>
     </div>
 
@@ -118,7 +108,7 @@
         <figure class="figure col-md-6 mx-auto d-block">
             <img src="../img/works/Project11/InGame.jpg"
                  class="figure-img img-fluid rounded mx-auto d-block"/>
-            <figcaption class="figure-caption center">UI du joueur</figcaption>
+            <figcaption class="figure-caption center" data-translate="stealthUE_figcaption_1"></figcaption>
             <div class="h-30"></div>
         </figure>
     </div>
@@ -126,24 +116,18 @@
         <figure class="figure col-md">
             <img src="../img/works/Project11/Victory.jpg"
                  class="figure-img img-fluid rounded mx-auto d-block"/>
-            <figcaption class="figure-caption center">Écran de victoire</figcaption>
+            <figcaption class="figure-caption center" data-translate="stealthUE_figcaption_2"></figcaption>
         </figure>
         <figure class="figure col-md">
             <img src="../img/works/Project11/Lose.jpg"
                  class="figure-img img-fluid rounded mx-auto d-block"/>
-            <figcaption class="figure-caption center">Écran de défaite</figcaption>
+            <figcaption class="figure-caption center" data-translate="stealthUE_figcaption_3"></figcaption>
             <div class="h-30"></div>
         </figure>
     </div>
 
     <div class="col-md-12">
-        <p>
-            Suite à ça, j'ai fait le menu principal, qui est une nouvelle scène en temps réel, ainsi que le menu pause.
-            En faisant le menu principal, j'en ai profité pour faire le level design du niveau.
-            J'ai ajouté un système qui permet au joueur de pouvoir changer le bindings de ses commandes à tous moments.<br>
-            Ce projet m'a permis de beaucoup apprendre sur l'UI et au code lier au widget.
-            Apprendre comment changer le bindings des commandes en temps réel fut très instructif.
-        </p>
+        <p data-translate="stealthUE_p3"></p>
         <div class="h-30"></div>
     </div>
 
@@ -151,20 +135,20 @@
         <figure class="figure col-md">
             <img src="../img/works/Project11/MainMenu.jpg"
                  class="figure-img img-fluid rounded mx-auto d-block"/>
-            <figcaption class="figure-caption center">Menu principal</figcaption>
+            <figcaption class="figure-caption center" data-translate="stealthUE_figcaption_4"></figcaption>
             <div class="h-30"></div>
         </figure>
         <figure class="figure col-md">
             <img src="../img/works/Project11/Pause.jpg"
                  class="figure-img img-fluid rounded mx-auto d-block"/>
-            <figcaption class="figure-caption center">Menu de pause</figcaption>
+            <figcaption class="figure-caption center" data-translate="stealthUE_figcaption_5"></figcaption>
         </figure>
     </div>
     <div class="row">
         <figure class="figure col-md-6 mx-auto d-block">
             <img src="../img/works/Project11/Settings.jpg"
                  class="figure-img img-fluid rounded mx-auto d-block"/>
-            <figcaption class="figure-caption center">L'écran du keybinding</figcaption>
+            <figcaption class="figure-caption center" data-translate="stealthUE_figcaption_6"></figcaption>
             <div class="h-30"></div>
         </figure>
     </div>

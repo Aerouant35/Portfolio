@@ -1,5 +1,18 @@
 $(window).load(function () {
 
+    const userPreferredLanguage = localStorage.getItem('language') || 'en';
+    loadLanguage(userPreferredLanguage);
+
+    $('.lang-choice').on('click', function(e) {
+        e.preventDefault();
+        $(this).prop("disabled", true);
+        var selectedLang = $(this).data('lang');
+        loadLanguage(selectedLang);
+        setLanguagePreference(selectedLang)
+    });
+
+    $('.lang-choice').prop("disabled", function() {return $(this).data('lang') == userPreferredLanguage;});
+      
     // preloader
     $('#status').fadeOut(); // will first fade out the loading animation
     $('#preloader').delay(550).fadeOut('slow'); // will fade out the white DIV that covers the website.
@@ -61,3 +74,18 @@ $(window).load(function () {
         }
     });
 });
+
+function loadLanguage(lang) {
+    $('html').attr('lang', lang);
+    $.getJSON('/languages/' + lang + '.json', function(translations) {
+        $('[data-translate]').each(function() {
+            var key = $(this).data('translate');
+            $(this).html(translations[key] || 'Missing translation');
+        });
+    });
+}
+
+function setLanguagePreference(lang) {
+    localStorage.setItem('language', lang);
+    location.reload();
+}

@@ -26,6 +26,13 @@
     </div>
 </div>
 
+<div style="position: absolute; right: 100px;">
+    <button type="button" class="btn btn-link lang-choice" data-lang="fr"><img src="/img/languages/fr.png" class="img-fluid" width="75" height="75"></button>
+</div>
+<div style="position: absolute; right: 0;">
+    <button type="button" class="btn btn-link lang-choice" data-lang="en"><img src="/img/languages/usa_uk.png" class="img-fluid" width="75" height="75"></button>
+</div>
+
 <div class="top-bar">
     <h1>Snow sickness</h1>
     <p><a href="../index.html" class="text-decoration-none">Home</a> / Snow sickness</p>
@@ -40,7 +47,7 @@
     <div class="row">
         <div class="col-md-8 mb-4 mb-md-0">
             <h3>Snow sickness</h3>
-            <h5>Bataille de boule de neige avec Netcode</h5>
+            <h5 data-translate="snowSicknessUnity_subtitle"></h5>
         </div>
         <div class="col-md mb-4 mb-md-0 d-flex justify-content-md-end">
             <a href="https://github.com/superzero4/TB2-GameJam2" target="_blank" class="col-md-3 col-2 me-md-3"><img class="img-fluid github_logo"></a>
@@ -62,16 +69,15 @@
         <div class="col-md-6 mb-3 mb-md-0">
             <div class="card h-100">
                 <div class="card-body">
-                    <h4 class="card-title">A propos</h4>
-                    <p class="card-text">Notre équipe de cinq a développé un jeu multijoueur de bataille de boules de neige. 
-                        Ce jeu a été développé avec la technologie Netcode for GameObjects.</p>
+                    <h4 class="card-title" data-translate="about"></h4>
+                    <p class="card-text" data-translate="snowSicknessUnity_about"></p>
                 </div>
             </div>
         </div>
         <div class="col-md-6">
             <div class="card h-100">
                 <div class="card-body">
-                    <h4 class="card-title">Info projet</h4>
+                    <h4 class="card-title" data-translate="project_info"></h4>
                     <table class="card-table">
                         <tbody>
                             <tr>
@@ -80,7 +86,7 @@
                             </tr>
                             <tr>
                                 <th scope="row"><i class="fa-solid fa-clock fa-lg"></i></th>
-                                <td>1 semaine</td>
+                                <td>1 <p class="d-inline" data-translate="week"></p></td>
                             </tr>
                             <tr>
                                 <th scope="row"><i class="fa-solid fa-users fa-lg"></i></th>
@@ -93,20 +99,9 @@
         </div>
     </div>
     <div class="col-md-12">
-        <p>
-            Ce projet consistait à créer un jeu avec Netcode sur le thème de Noël, développé en équipe de cinq personnes.
-            Nous avons opté pour un jeu multijoueur en peer to peer où l'objectif est de participer à une bataille de
-            boules de neige. Chaque joueur dispose de trois points de vie et d'une minimap pour repérer sa position et
-            celle de ses adversaires. Lorsqu'un joueur souhaite charger une boule de neige, il doit rester immobile
-            pendant le chargement. La partie se termine lorsqu'il n'y a plus d'adversaires.
-        </p>
+        <p data-translate="snowSicknessUnity_p1"></p>
 
-        <p>
-            J'ai intégré Netcode for GameObjects afin de tirer parti de ses fonctionnalités simplifiant le développement
-            de jeux multijoueurs. Cette solution propose une approche flexible et extensible pour la synchronisation
-            des objets réseau, améliorant la gestion des autorités et des prédictions. L'utilisation de Relay, un
-            service de Netcode for GameObjects, simplifie la connexion entre le client et l'hôte.
-        </p>
+        <p data-translate="snowSicknessUnity_p2"></p>
         <div class="h-30"></div>
     </div>
 
@@ -122,15 +117,7 @@
     </div>
 
     <div class="col-md-12">
-        <p>
-            J'ai mis en place le lobby avec ses composants essentiels, incluant la gestion de la connexion, la
-            déconnexion, l'identification du client, le pseudonyme, le code du lobby et la sélection de skins.
-            J'ai implémenté la synchronisation des événements tels que la mort des joueurs par l'utilisation de
-            ServerRPC et ClientRPC. De même, la synchronisation des données telles que la santé, le code du lobby, ou
-            les joueurs, est mise en œuvre à travers l'utilisation de NetworkVariables et NetworkList. Les composants
-            Unity tels qu'Animator, Transform, Rigidbody, etc., sont coordonnés avec l'autorité du client en exploitant
-            les composants natifs de Netcode for GameObjects.
-        </p>
+        <p data-translate="snowSicknessUnity_p3"></p>
         <div class="h-30"></div>
     </div>
 
@@ -138,12 +125,12 @@
         <figure class="figure col-md">
             <img src="../img/works/Project14/lobby.png"
                  class="figure-img img-fluid rounded mx-auto d-block"/>
-            <figcaption class="figure-caption center">Le lobby</figcaption>
+            <figcaption class="figure-caption center" data-translate="snowSicknessUnity_figcaption_1"></figcaption>
         </figure>
         <figure class="figure col-md">
             <img src="../img/works/Project14/EndGame.png"
                  class="figure-img img-fluid rounded mx-auto d-block"/>
-            <figcaption class="figure-caption center">Le podium de fin</figcaption>
+            <figcaption class="figure-caption center" data-translate="snowSicknessUnity_figcaption_2"></figcaption>
         </figure>
     </div>
 </div>

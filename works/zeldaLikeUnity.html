@@ -26,6 +26,13 @@
     </div>
 </div>
 
+<div style="position: absolute; right: 100px;">
+    <button type="button" class="btn btn-link lang-choice" data-lang="fr"><img src="/img/languages/fr.png" class="img-fluid" width="75" height="75"></button>
+</div>
+<div style="position: absolute; right: 0;">
+    <button type="button" class="btn btn-link lang-choice" data-lang="en"><img src="/img/languages/usa_uk.png" class="img-fluid" width="75" height="75"></button>
+</div>
+
 <div class="top-bar">
     <h1>Zelda like</h1>
     <p><a href="../index.html" class="text-decoration-none">Home</a> / Zelda like</p>
@@ -39,7 +46,7 @@
 
     <div class="col-md-12 mb-3">
         <h3>Zelda like</h3>
-        <h5>Utilisation des notions acquises, partie 2</h5>
+        <h5 data-translate="zeldaLikeUnity_subtitle"></h5>
     </div>
     <div class="row mb-4">
         <div class="col-md-12">
@@ -56,16 +63,15 @@
         <div class="col-md-6 mb-3 mb-md-0">
             <div class="card h-100">
                 <div class="card-body">
-                    <h4 class="card-title">A propos</h4>
-                    <p class="card-text">Ce projet synthétise les compétences acquises lors des précédents projets, 
-                        en développant un jeu de type "Zelda-like" incluant un ennemi, une énigme, et un boss à deux phases.</p>
+                    <h4 class="card-title" data-translate="about"></h4>
+                    <p class="card-text" data-translate="zeldaLikeUnity_about"></p>
                 </div>
             </div>
         </div>
         <div class="col-md-6">
             <div class="card h-100">
                 <div class="card-body">
-                    <h4 class="card-title">Info projet</h4>
+                    <h4 class="card-title" data-translate="project_info"></h4>
                     <table class="card-table">
                         <tbody>
                             <tr>
@@ -74,7 +80,7 @@
                             </tr>
                             <tr>
                                 <th scope="row"><i class="fa-solid fa-clock fa-lg"></i></th>
-                                <td>1 semaine</td>
+                                <td>1 <p class="d-inline" data-translate="week"></p></td>
                             </tr>
                             <tr>
                                 <th scope="row"><i class="fa-solid fa-users fa-lg"></i></th>
@@ -87,25 +93,9 @@
         </div>
     </div>
     <div class="col-md-12">
-        <p>
-            Sur ce projet, on devait utiliser tout ce qu'on avait appris au cours des précédents projets et les
-            réutiliser dans celui-ci.
-            Pour ce projet, le type de jeu demandé est un zelda like donc il devait comporter un ennemi, une énigme
-            et un boss avec au minimum deux phases.</p>
+        <p data-translate="zeldaLikeUnity_p1"></p>
 
-        <p>
-            Je me suis inspiré des donjons des zelda 2D (Link's Awakening). Mon jeu est en 2D avec pour
-            énigme la récupération de la clé qui permet d'ouvrir la porte du boss.
-            Le joueur a trois points de vie et quand ses points de vie atteignent zéro, c'est la fin de la partie. Si
-            le joueur tue le boss, la partie est gagnée.<br>
-            Pour l'animator du joueur, il y a deux blend tree : un pour quand il marche et un pour ses attaques.
-            Pour les attaques du personages, j'ai inclus un polygon collider pour que la hitbox épouse l'animation
-            de l'attaque.<br>
-            Lorsque le joueur veut changer de salle, il entre en contact avec la trigger box qui se trouve juste
-            avant la sortie de celle-ci.
-            Alors le script fait faire un déplacement du joueur et de la caméra pour se recentrer sur la salle
-            suivante.
-        </p>
+        <p data-translate="zeldaLikeUnity_p2"></p>
         <div class="h-30"></div>
     </div>
 
@@ -113,31 +103,22 @@
         <figure class="figure col-md">
             <img src="../img/works/Project5/AnimatorPlayer.jpg"
                  class="figure-img img-fluid rounded mx-auto d-block"/>
-            <figcaption class="figure-caption center">Animator du joueur</figcaption>
+            <figcaption class="figure-caption center" data-translate="zeldaLikeUnity_figcaption_1"></figcaption>
         </figure>
         <figure class="figure col-md-3">
             <img src="../img/works/Project5/Attack.jpg"
                  class="figure-img img-fluid rounded mx-auto d-block"/>
-            <figcaption class="figure-caption center">Polygon collider de l'attaque</figcaption>
+            <figcaption class="figure-caption center" data-translate="zeldaLikeUnity_figcaption_2"></figcaption>
         </figure>
         <figure class="figure col-md">
             <img src="../img/works/Project5/RoomMove.jpg"
                  class="figure-img img-fluid rounded mx-auto d-block"/>
-            <figcaption class="figure-caption center">Box collider pour changer de salle</figcaption>
+            <figcaption class="figure-caption center" data-translate="zeldaLikeUnity_figcaption_3"></figcaption>
         </figure>
     </div>
 
     <div class="col-md-12">
-        <p>
-            Les ennemis sont limités, ils ne peuvent que suivre le joueur et quand celui-ci rentre dans la zone de la
-            hitbox de l'ennemi, il perd un point de vie et se fait repousser.
-            Mais si le joueur attaque l'ennemi, l'ennemi perd un point de vie et se fait repousser. L'ennemi a trois
-            points de vie et quand il atteint zéro point de vie, il disparaît.<br>
-            Quand le joueur entre la hitbox de la clé, le joueur récupère la clé, celle-ci disparaît de la salle et
-            s'affiche sur l'UI du joueur.
-            Le joueur qui a la clé et qui s'approche de la trigger box de la porte du boss et appuie sur la touche
-            "E", celle-ci s'ouvre et permet au joueur d'affronter le boss.
-        </p>
+        <p data-translate="zeldaLikeUnity_p3"></p>
         <div class="h-30"></div>
     </div>
 
@@ -145,29 +126,23 @@
         <figure class="figure col-md">
             <img src="../img/works/Project5/Enemy.jpg"
                  class="figure-img img-fluid rounded mx-auto d-block"/>
-            <figcaption class="figure-caption center">Ennemi et sa hitbox</figcaption>
+            <figcaption class="figure-caption center" data-translate="zeldaLikeUnity_figcaption_4"></figcaption>
         </figure>
         <figure class="figure col-md">
             <img src="../img/works/Project5/KeyUI.jpg"
                  class="figure-img img-fluid rounded mx-auto d-block"/>
-            <figcaption class="figure-caption center">Affiche de clé sur l'UI</figcaption>
+            <figcaption class="figure-caption center" data-translate="zeldaLikeUnity_figcaption_5"></figcaption>
         </figure>
         <figure class="figure col-md-4">
             <img src="../img/works/Project5/Door.jpg"
                  class="figure-img img-fluid rounded mx-auto d-block"/>
-            <figcaption class="figure-caption center">Box collider de la porte</figcaption>
+            <figcaption class="figure-caption center" data-translate="zeldaLikeUnity_figcaption_6"></figcaption>
             <div class="h-30"></div>
         </figure>
     </div>
 
     <div class="col-md-12">
-        <p>
-            A l'entrée du personnage, le boss commence à attaquer. Ses attaques sont des boules de feu qui ciblent le
-            personnage.
-            Quand le boss atteint la moitié de sa vie, il entre dans sa deuxième phase, sa couleur devient rouge et
-            sa cadence de tire est augmentée du double.
-            Quand le boss n'a plus de vie, il disparaît et la partie est finie.
-        </p>
+        <p data-translate="zeldaLikeUnity_p4"></p>
         <div class="h-30"></div>
     </div>
 
@@ -175,13 +150,13 @@
         <figure class="figure col-md-6">
             <img src="../img/works/Project5/Boss.jpg"
                  class="figure-img img-fluid rounded mx-auto d-block"/>
-            <figcaption class="figure-caption center">Le boss avec une boule de feu lancé</figcaption>
+            <figcaption class="figure-caption center" data-translate="zeldaLikeUnity_figcaption_7"></figcaption>
 
         </figure>
         <figure class="figure col-md-6">
             <img src="../img/works/Project5/BossP2.jpg"
                  class="figure-img img-fluid rounded mx-auto d-block"/>
-            <figcaption class="figure-caption center">Deuxième phase du boss</figcaption>
+            <figcaption class="figure-caption center" data-translate="zeldaLikeUnity_figcaption_8"></figcaption>
         </figure>
     </div>
 </div>
